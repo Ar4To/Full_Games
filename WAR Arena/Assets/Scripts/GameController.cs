@@ -6,7 +6,7 @@ using Photon.Realtime;
 
 public class GameController : MonoBehaviourPunCallbacks
 {
-    public byte maxPlayersRoom = 4; // numero de jgadores maximos
+    public byte maxPlayersRoom = 2; // numero de jogadores maximos
     [HideInInspector]
     public string _appVersion = "0.1"; // versão do jogo
    
@@ -36,7 +36,7 @@ public class GameController : MonoBehaviourPunCallbacks
 
     public void CreateRoom(string _roomName, bool _create = true)
     {
-        // Criar uma sala
+        //Criar uma sala
 
         RoomOptions _ro = new RoomOptions();
         _ro.MaxPlayers = maxPlayersRoom;
