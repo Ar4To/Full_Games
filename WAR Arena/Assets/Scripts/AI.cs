@@ -17,7 +17,7 @@ public class AI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //moves = GetComponent<NavMeshAgent>();
+        
         moves.destination = enemyTransform.position;
     }
 
@@ -25,7 +25,9 @@ public class AI : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player2"))
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 0.1f);
         }
     }
+
+
 }

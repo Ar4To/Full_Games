@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Player2
+  - Soldier
+  - Bazooka
+  - Tank
+  - Ship
+  - Plane
   layers:
   - Default
   - TransparentFX

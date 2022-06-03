@@ -9,10 +9,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float moneyTime = 5, buyTime = 0.8f; //tempo de receber dinheiro
     public Text moneyTxt; //texto do dinheiro
-    public float life = 100f;
-    public Image lifeMAX;
-    public GameObject [] soldiers;
-    private Transform spawner;
+    public float life = 100f; //vida
+    public Image lifeMAX; //vida maxima
+    public GameObject [] soldiers; //prefab dos soldados
+    private Transform spawner; //posição do spawner
 
     // Start is called before the first frame update
     void Start()
@@ -113,5 +113,34 @@ public class PlayerController : MonoBehaviour
         }
     }
     #endregion
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Soldier"))
+        {
+            life -= 5;
+        }
+
+        if (collision.gameObject.CompareTag("Bazooka"))
+        {
+            life -= 10;
+        }
+
+        if (collision.gameObject.CompareTag("Tank"))
+        {
+            life -= 27;
+        }
+
+        if (collision.gameObject.CompareTag("Ship"))
+        {
+            life -= 38;
+        }
+
+        if (collision.gameObject.CompareTag("Plane"))
+        {
+            life -= 50;
+        }
+    }
+
 }
 
