@@ -10,6 +10,11 @@ TagManager:
   - Tank
   - Ship
   - Plane
+  - Soldier2
+  - Bazooka2
+  - Tank2
+  - Ship2
+  - Plane2
   layers:
   - Default
   - TransparentFX
