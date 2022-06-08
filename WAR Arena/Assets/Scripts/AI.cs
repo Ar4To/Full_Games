@@ -52,69 +52,79 @@ public class AI : MonoBehaviour
             }
         }
 
-         private void OnTriggerEnter(Collider other)
-        {
+        
 
-       
-    }
+         
 
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Soldier2"))
         {
-
             soldierTransform = GameObject.FindWithTag("Soldier2").transform;
             Fight();
-
+        } else 
+        { 
+            moves.destination = enemyTransform.position;
+            this.GetComponent<NavMeshAgent>().speed = 1.5f;
         }
 
         if (other.gameObject.CompareTag("Bazooka2"))
         {
-
-            soldierTransform = GameObject.FindWithTag("Bazooka2").transform;
+            bazookaTransform = GameObject.FindWithTag("Bazooka2").transform;
             Fight();
-
+        }
+        else
+        {
+            moves.destination = enemyTransform.position;
+            this.GetComponent<NavMeshAgent>().speed = 1.5f;
         }
 
         if (other.gameObject.CompareTag("Tank2"))
         {
-
-            soldierTransform = GameObject.FindWithTag("Tank2").transform;
+            tankTransform = GameObject.FindWithTag("Tank2").transform;
             Fight();
-
+        }
+        else
+        {
+            moves.destination = enemyTransform.position;
+            this.GetComponent<NavMeshAgent>().speed = 1.5f;
         }
 
         if (other.gameObject.CompareTag("Ship2"))
         {
-
-            soldierTransform = GameObject.FindWithTag("Ship2").transform;
+            shipTransform = GameObject.FindWithTag("Ship2").transform;
             Fight();
-
+        }
+        else
+        {
+            moves.destination = enemyTransform.position;
+            this.GetComponent<NavMeshAgent>().speed = 1.5f;
         }
 
         if (other.gameObject.CompareTag("Plane2"))
         {
-
             soldierTransform = GameObject.FindWithTag("Plane2").transform;
             Fight();
-
+        }
+        else
+        {
+            moves.destination = enemyTransform.position;
+            this.GetComponent<NavMeshAgent>().speed = 1.5f;
         }
     }
 
 
     void Fight()
     {
+        
         if (Vector3.Distance(transform.position, soldierTransform.position) <= moves.stoppingDistance + 5)
         {
             print("aaaaaaa");
             this.GetComponent<NavMeshAgent>().speed = 0f;
-            anim.SetBool("ataque", true);
-        } else if (Vector3.Distance(transform.position, soldierTransform.position) <= moves.stoppingDistance + 5)
-        {
-            this.GetComponent<NavMeshAgent>().speed = 1.5f;
-            anim.SetBool("walk", true);
+           // anim.SetBool("ataque", true);
+            
         }
-
+        
         if (Vector3.Distance(transform.position, bazookaTransform.position) <= moves.stoppingDistance + 5)
         {
             print("aaaaaaa");
@@ -122,11 +132,7 @@ public class AI : MonoBehaviour
             
             anim.SetBool("ataque", true);
         }
-        else
-        {
-            this.GetComponent<NavMeshAgent>().speed = 1.5f;
-            
-        }
+       
 
         if (Vector3.Distance(transform.position, tankTransform.position) <= moves.stoppingDistance + 5)
         {
@@ -134,11 +140,7 @@ public class AI : MonoBehaviour
             this.GetComponent<NavMeshAgent>().speed = 0f;
             anim.SetBool("ataque", true);
         }
-        else
-        {
-            this.GetComponent<NavMeshAgent>().speed = 1.5f;
-            
-        }
+        
 
         if (Vector3.Distance(transform.position, shipTransform.position) <= moves.stoppingDistance + 5)
         {
@@ -147,11 +149,7 @@ public class AI : MonoBehaviour
             anim.SetBool("ataque", true);
 
         }
-        else
-        {
-            this.GetComponent<NavMeshAgent>().speed = 1.5f;
-            
-        }
+        
 
         if (Vector3.Distance(transform.position, planeTransform.position) <= moves.stoppingDistance + 5)
         {
@@ -160,11 +158,7 @@ public class AI : MonoBehaviour
             anim.SetBool("ataque", true);
 
         }
-        else 
-        {
-            this.GetComponent<NavMeshAgent>().speed = 1.5f;
-            
-        }
+        
     }
     
     void ExitFight()
