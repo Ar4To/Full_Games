@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.AI;
 
 public class AI : MonoBehaviour
 {
     
-    private Transform enemyTransform;
+     public Transform enemyTransform;
     public Transform soldierTransform, bazookaTransform, tankTransform, shipTransform, planeTransform;
     public Transform allySoldier, allyBazooka, allyTank, allyShip, allyPlane;
     public NavMeshAgent moves;
@@ -19,7 +20,7 @@ public class AI : MonoBehaviour
         moves = GetComponent<NavMeshAgent>();
 
         enemyTransform = GameObject.Find("PLAYER 2").transform;
-
+        anim = GetComponent<Animator>();
         
     }
     // Update is called once per frame
@@ -38,25 +39,31 @@ public class AI : MonoBehaviour
         if (collision.gameObject.CompareTag("Player2"))
         {
             Destroy(gameObject, 0.1f);
+            Debug.Log("gozei");
         }
+      
     }
 
 
 
 
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         #region interação tropas inimigas
         if (other.gameObject.CompareTag("Soldier2"))
         {
+
+            anim.SetBool("StopEnemy", true);
+            anim.SetTrigger("atirar");
             
             soldierTransform = other.gameObject.GetComponent<Transform>();
-           
-            moves.SetDestination(transform.position);
 
+            //moves.SetDestination(transform.position);
+            
 
-        } 
+        }
+        
         #endregion[
     }
 
@@ -71,30 +78,9 @@ public class AI : MonoBehaviour
             
         }
 
-        if (Vector3.Distance(transform.position, bazookaTransform.position) <= moves.stoppingDistance + 5)
-        {
-            this.GetComponent<NavMeshAgent>().speed = 0.2f;
-
-        }
-
-        if (Vector3.Distance(transform.position, tankTransform.position) <= moves.stoppingDistance + 5)
-        {
-            this.GetComponent<NavMeshAgent>().speed = 0.2f;
-
-        }
-
-        if (Vector3.Distance(transform.position, shipTransform.position) <= moves.stoppingDistance + 5)
-        {
-            this.GetComponent<NavMeshAgent>().speed = 0.2f;
-
-        }
-
-        if (Vector3.Distance(transform.position, planeTransform.position) <= moves.stoppingDistance + 5)
-        {
-            this.GetComponent<NavMeshAgent>().speed = 0.2f;
-
-        }
+       
     }
+    
 
 }
 
