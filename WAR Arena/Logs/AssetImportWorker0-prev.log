@@ -1,0 +1,948 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.28f1 (f5400f52e03f) revision 16072719'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Professional' Language: 'pt' Physical Memory: 16180 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.28f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/victor.mendes/Documents/GitHub/Full_Games/WAR Arena
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49543
+Successfully changed project path to: C:/Users/victor.mendes/Documents/GitHub/Full_Games/WAR Arena
+C:/Users/victor.mendes/Documents/GitHub/Full_Games/WAR Arena
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 47.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.28f1 (f5400f52e03f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/victor.mendes/Documents/GitHub/Full_Games/WAR Arena/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA Quadro P620 (ID=0x1cb6)
+    Vendor:   
+    VRAM:     1977 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001702 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 43.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.524 seconds
+Domain Reload Profiling:
+	ReloadAssembly (524ms)
+		BeginReloadAssembly (57ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (405ms)
+			LoadAssemblies (55ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (126ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (156ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (44ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (69ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006016 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 45.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.012 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1013ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (825ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (271ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (318ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (172ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2425 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.5 MB.
+System memory in use after: 104.5 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2853.
+Total: 3.165000 ms (FindLiveObjects: 0.189900 ms CreateObjectMapping: 0.107800 ms MarkObjects: 2.744100 ms  DeleteObjects: 0.122400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/ARENA.unity
+  artifactKey: Guid(bf06fdab8cba8454b8a8ecb3cc8dfe2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ARENA.unity using Guid(bf06fdab8cba8454b8a8ecb3cc8dfe2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dba7b21a157ddce292b1236c10cd955') in 0.027996 seconds 
+  Import took 0.031176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.828050 seconds.
+  path: Assets/Simple Warships/Demo Scene/Ships Post-Processing Profile.asset
+  artifactKey: Guid(7639553fae43a8d45b0e82a599de4bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Demo Scene/Ships Post-Processing Profile.asset using Guid(7639553fae43a8d45b0e82a599de4bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf4c19c8e71ceb5bf69a25cbdc00aea5') in 0.021229 seconds 
+  Import took 0.024909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.210096 seconds.
+  path: Assets/Simple Warships/Demo Scene/Demo.unity
+  artifactKey: Guid(ed5238fa3f44c384896402bc9e60447c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Demo Scene/Demo.unity using Guid(ed5238fa3f44c384896402bc9e60447c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624dfb350fa4b914801e406d8b6349f8') in 0.005967 seconds 
+  Import took 0.009261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.350730 seconds.
+  path: Assets/Simple Warships/Demo Scene/DemoSettings.lighting
+  artifactKey: Guid(aa9d0702898d93841b0b8a8a756fa925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Demo Scene/DemoSettings.lighting using Guid(aa9d0702898d93841b0b8a8a756fa925) Importer(815301076,1909f56bfc062723c751e8b465ee728b) LightingSettings: switching bake backend from 1 to 0.
+ -> (artifact id: '1648d25f4fe7e1951eb566eec6e346da') in 0.006401 seconds 
+  Import took 0.009587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.537483 seconds.
+  path: Assets/Simple Warships/Demo Scene/Rotate.cs
+  artifactKey: Guid(d7d03d675eb56d048bfe1feaea6525d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Demo Scene/Rotate.cs using Guid(d7d03d675eb56d048bfe1feaea6525d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ecea9e2180ccd707ff2bb8582e4dd5e') in 0.006758 seconds 
+  Import took 0.010038 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005533 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.911 seconds
+Domain Reload Profiling:
+	ReloadAssembly (912ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (750ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (275ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (265ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2418 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.5 MB.
+System memory in use after: 104.5 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2855.
+Total: 3.266800 ms (FindLiveObjects: 0.192000 ms CreateObjectMapping: 0.098100 ms MarkObjects: 2.867400 ms  DeleteObjects: 0.108000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 18.944742 seconds.
+  path: Assets/Simple Warships/Materials/Black.mat
+  artifactKey: Guid(c2fa5c47a18e6e34e967ef3183ad0c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Materials/Black.mat using Guid(c2fa5c47a18e6e34e967ef3183ad0c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d5ab53c7f825f96c8b78f55ec0ee60') in 0.077079 seconds 
+  Import took 0.080456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Simple Warships/Materials/Light Grey.mat
+  artifactKey: Guid(f845d14d09b85014ba8511480e6a5e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Materials/Light Grey.mat using Guid(f845d14d09b85014ba8511480e6a5e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd658d6f50bc8558abdbc1d343289df00') in 0.011666 seconds 
+  Import took 0.014720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Simple Warships/Materials/Camouflage.png
+  artifactKey: Guid(452360a2232c86b47820d3425e1a3c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Materials/Camouflage.png using Guid(452360a2232c86b47820d3425e1a3c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ab4ce3105068a943cff820a4b449aa') in 0.019657 seconds 
+  Import took 0.022595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Simple Warships/Materials/White.mat
+  artifactKey: Guid(9855e70614dd5c64da46b54a0bfce6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Materials/White.mat using Guid(9855e70614dd5c64da46b54a0bfce6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac32a64fa17f9202d67d9d05b13b5bd7') in 0.011390 seconds 
+  Import took 0.014296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Simple Warships/Materials/Pattern.mat
+  artifactKey: Guid(57c284ad1d262ef4fbf1b30c4bffb8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Materials/Pattern.mat using Guid(57c284ad1d262ef4fbf1b30c4bffb8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d678dc8762d573613af83dd8000aea') in 0.011755 seconds 
+  Import took 0.015063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Simple Warships/Materials/Grey.mat
+  artifactKey: Guid(a1d9cb9c5ef5e8c4ebcaa13a34b34886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Materials/Grey.mat using Guid(a1d9cb9c5ef5e8c4ebcaa13a34b34886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19b3e10439f741265925a973fe22208f') in 0.011587 seconds 
+  Import took 0.014776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.752456 seconds.
+  path: Assets/Simple Warships/Battleship.prefab
+  artifactKey: Guid(aea52f5da97018c4aaecffcdfa9035d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Battleship.prefab using Guid(aea52f5da97018c4aaecffcdfa9035d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c494ced46e8d1d401e5e3a004196e567') in 0.027920 seconds 
+  Import took 0.031490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Simple Warships/Medium Turret.prefab
+  artifactKey: Guid(7ebf464d27f1a76469356e5543130142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Medium Turret.prefab using Guid(7ebf464d27f1a76469356e5543130142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd0e07694545b39175be85303e1e6864') in 0.015635 seconds 
+  Import took 0.018613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Simple Warships/Small Turret.prefab
+  artifactKey: Guid(177a5c827e86ec349b4595955103c11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Small Turret.prefab using Guid(177a5c827e86ec349b4595955103c11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52672cd83124392e9a3c73c24cf15fb3') in 0.031449 seconds 
+  Import took 0.034524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Simple Warships/Frigate.prefab
+  artifactKey: Guid(c3672f9b2e0555e418f7dcc46c6d0d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Frigate.prefab using Guid(c3672f9b2e0555e418f7dcc46c6d0d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1029908ccff57c86a9db3cd246cbc9a') in 0.012745 seconds 
+  Import took 0.016030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Simple Warships/Corvette.prefab
+  artifactKey: Guid(09419625ea90e2f478b96ae476784b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Corvette.prefab using Guid(09419625ea90e2f478b96ae476784b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96293949d354e034319e3077ccdc361c') in 0.013383 seconds 
+  Import took 0.016906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Simple Warships/Destroyer.prefab
+  artifactKey: Guid(74d0740f4abc7e54fab50d33af2582da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Destroyer.prefab using Guid(74d0740f4abc7e54fab50d33af2582da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d7fd2369575bb884084a7911ab740ff') in 0.013181 seconds 
+  Import took 0.016291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Simple Warships/Cruiser.prefab
+  artifactKey: Guid(ec5d6bc6e2d4942448a8b3d9eddf3865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Cruiser.prefab using Guid(ec5d6bc6e2d4942448a8b3d9eddf3865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45f13b876e7d59015c0026720ad84516') in 0.014222 seconds 
+  Import took 0.017634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Simple Warships/Ships FBX.FBX
+  artifactKey: Guid(46cd524120389ad418423045618d2621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Ships FBX.FBX using Guid(46cd524120389ad418423045618d2621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903e24402d7296966a1a52b10cf4b732') in 0.257280 seconds 
+  Import took 0.260588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Simple Warships/Large Turret.prefab
+  artifactKey: Guid(a2da196dbd4dff04286bf741ae2777b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Large Turret.prefab using Guid(a2da196dbd4dff04286bf741ae2777b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3657959ff71ba9e3342349dd03ec2686') in 0.011623 seconds 
+  Import took 0.015269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.820312 seconds.
+  path: Assets/ToonSoldiers_WW2_demo/ToonSoldier_WW2_demo_model.prefab
+  artifactKey: Guid(2599104a4a2a5214f8407d03827b5eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonSoldiers_WW2_demo/ToonSoldier_WW2_demo_model.prefab using Guid(2599104a4a2a5214f8407d03827b5eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b489d94a5a03142c36bec224573aafb') in 0.153123 seconds 
+  Import took 0.156931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.490660 seconds.
+  path: Assets/WW2 Armed Forces Demo/Demo
+  artifactKey: Guid(96ffba98cbe19ba4c81aeab056118663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Demo using Guid(96ffba98cbe19ba4c81aeab056118663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad8e5c3463ee5b04f0cc614537443d2') in 0.005063 seconds 
+  Import took 0.008429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.780317 seconds.
+  path: Assets/WW2 Armed Forces Demo/Demo/Demo.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Demo/Demo.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b03a70912007054f4b206d5e567b0da') in 0.002264 seconds 
+  Import took 0.005587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.760685 seconds.
+  path: Assets/Low Poly Weapons VOL.1/Sample_Scene.unity
+  artifactKey: Guid(f717f15f191a08741986e6e8efa197ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Weapons VOL.1/Sample_Scene.unity using Guid(f717f15f191a08741986e6e8efa197ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8688c6acc0ce4fd77753afcc5e17fc') in 0.005068 seconds 
+  Import took 0.008510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.248852 seconds.
+  path: Assets/WW2 Armed Forces Demo/Scripts/Scroll_Track.cs
+  artifactKey: Guid(775fefb26cc024d4a939e180464ded6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Scripts/Scroll_Track.cs using Guid(775fefb26cc024d4a939e180464ded6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d45ae2681fd9ef95d6067ed9bff469') in 0.004550 seconds 
+  Import took 0.008059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.195544 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/Carro_Armato_L6_40.fbx
+  artifactKey: Guid(9760a13833901e3458983bc9201aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/Carro_Armato_L6_40.fbx using Guid(9760a13833901e3458983bc9201aa791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9549e0b7e646645707a44dc38cc9cd64') in 0.088102 seconds 
+  Import took 0.091658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/SOMUA_S35.fbx
+  artifactKey: Guid(21b9d46bd64fa9c41a757d7d2bd68c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/SOMUA_S35.fbx using Guid(21b9d46bd64fa9c41a757d7d2bd68c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1882a85ab8612972d8083d22e7505d04') in 0.092997 seconds 
+  Import took 0.096018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/M5A1_Stuart.fbx
+  artifactKey: Guid(85e177f1c2fb49047a065d605cf0aa38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/M5A1_Stuart.fbx using Guid(85e177f1c2fb49047a065d605cf0aa38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c7cbd7ed147189dcfc7cde40d41893') in 0.086576 seconds 
+  Import took 0.089586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/M4A3(75)_Sherman.fbx
+  artifactKey: Guid(184961720d718b14094db99ebab8f232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/M4A3(75)_Sherman.fbx using Guid(184961720d718b14094db99ebab8f232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14dfd625d33d644bd9bd7f1b05b58471') in 0.059217 seconds 
+  Import took 0.062309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/Chi_Ha.fbx
+  artifactKey: Guid(dd1b4de3b25189940abb94cfe4d913ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/Chi_Ha.fbx using Guid(dd1b4de3b25189940abb94cfe4d913ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8fb1fd8308a473ac143afaa4c5545a0') in 0.077541 seconds 
+  Import took 0.080573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/T_34_76.fbx
+  artifactKey: Guid(847074d2b32f2964eb762fc18231b9e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/T_34_76.fbx using Guid(847074d2b32f2964eb762fc18231b9e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc6bf9d78808b6a62f10768929d0616') in 0.081527 seconds 
+  Import took 0.084572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/Panzer_VI_E.fbx
+  artifactKey: Guid(8383bdf117bcd2a4da5dd2e573b9de23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/Panzer_VI_E.fbx using Guid(8383bdf117bcd2a4da5dd2e573b9de23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395b1fbdb7bc27f1efc1d20acfcfc195') in 0.091834 seconds 
+  Import took 0.094900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/KV_2.fbx
+  artifactKey: Guid(4cb42837d55985749928d2afa9672e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/KV_2.fbx using Guid(4cb42837d55985749928d2afa9672e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23ab173f55216e363a07beb25e50121') in 0.220351 seconds 
+  Import took 0.223406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/Ha_Go.fbx
+  artifactKey: Guid(3fab61b99db84344c9b4ce0adb48fe1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/Ha_Go.fbx using Guid(3fab61b99db84344c9b4ce0adb48fe1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44134008387e668d82d8e4ebdd89d5a0') in 0.184026 seconds 
+  Import took 0.187087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/Hotchkiss_H35.fbx
+  artifactKey: Guid(b6a8e96f709732d49b968642c76bea2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/Hotchkiss_H35.fbx using Guid(b6a8e96f709732d49b968642c76bea2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26fde030b74b9c04a4f159f8a84e0f9f') in 0.088124 seconds 
+  Import took 0.091145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/Matilda_II.fbx
+  artifactKey: Guid(e18b4c17ee23ba7428d5166af77f7837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/Matilda_II.fbx using Guid(e18b4c17ee23ba7428d5166af77f7837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee977bfa21e10a9b997f09f6eb64a8b') in 0.085108 seconds 
+  Import took 0.088093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/Cromwell_IV.fbx
+  artifactKey: Guid(0089e4ef716f68b4f9146fc2282177b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/Cromwell_IV.fbx using Guid(0089e4ef716f68b4f9146fc2282177b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7010844fa4ecf2714627220848129ea2') in 0.086813 seconds 
+  Import took 0.089930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/Panzer_II_F.fbx
+  artifactKey: Guid(bdd5e5aa77812524bbe7195c08d0d9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/Panzer_II_F.fbx using Guid(bdd5e5aa77812524bbe7195c08d0d9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87682d2e7292415332e76d3c1f0738d3') in 0.080842 seconds 
+  Import took 0.083862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/WW2 Armed Forces Demo/Models/Carro_Armato_M13_40.fbx
+  artifactKey: Guid(2d7ac3334bc653d40ac528cb566dad45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Models/Carro_Armato_M13_40.fbx using Guid(2d7ac3334bc653d40ac528cb566dad45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55a6ef147930e98f8459650b14a0c750') in 0.092321 seconds 
+  Import took 0.095358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.672775 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/Carro_Armato_L6_40.prefab
+  artifactKey: Guid(6df639913147c224ea5b9ceda94435ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/Carro_Armato_L6_40.prefab using Guid(6df639913147c224ea5b9ceda94435ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5369c0afb59fa8fd6be003a22b1760e') in 0.705926 seconds 
+  Import took 0.709943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/Carro_Armato_M13_40.prefab
+  artifactKey: Guid(223da80c35889c24c8850c6a4e112261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/Carro_Armato_M13_40.prefab using Guid(223da80c35889c24c8850c6a4e112261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1716878f16e74a85a997b8dfc586425') in 0.248997 seconds 
+  Import took 0.252636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/T_34_76.prefab
+  artifactKey: Guid(2ebf979aaaeff1a45966f55f233733e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/T_34_76.prefab using Guid(2ebf979aaaeff1a45966f55f233733e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '761a6a9e4dca0b5fcb3c0432aa9308f7') in 0.242546 seconds 
+  Import took 0.246127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/Ha_Go.prefab
+  artifactKey: Guid(5a3ffe14bfec95a44a8670b30c366479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/Ha_Go.prefab using Guid(5a3ffe14bfec95a44a8670b30c366479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fcedf04771c4e3b4d0be10c5b9f4930') in 0.241192 seconds 
+  Import took 0.244795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/Hotchkiss_H35.prefab
+  artifactKey: Guid(6c27316a4329175499c8b8a161bbf40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/Hotchkiss_H35.prefab using Guid(6c27316a4329175499c8b8a161bbf40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a3fe8de09df3c3212a22ce86b56a366') in 0.235267 seconds 
+  Import took 0.239116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/Cromwell_IV.prefab
+  artifactKey: Guid(5f694739ee4c9494c905f4e9353cfe0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/Cromwell_IV.prefab using Guid(5f694739ee4c9494c905f4e9353cfe0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbdb0fb2eb199caafa260c190efbfa00') in 0.286538 seconds 
+  Import took 0.290211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/M4A3(75)_Sherman.prefab
+  artifactKey: Guid(ad899c9168e7f5c4db7f2447350a5249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/M4A3(75)_Sherman.prefab using Guid(ad899c9168e7f5c4db7f2447350a5249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8012f11b3ad28b464136a2bf72cd748d') in 0.273200 seconds 
+  Import took 0.276849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/Chi_Ha.prefab
+  artifactKey: Guid(6b0b29e0168b61c4ab830ad250f7bf62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/Chi_Ha.prefab using Guid(6b0b29e0168b61c4ab830ad250f7bf62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c5e18c62b1088670f431ac3b4452830') in 0.350872 seconds 
+  Import took 0.354419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/Matilda_II.prefab
+  artifactKey: Guid(4dc2293ab5c561140872035453dd1c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/Matilda_II.prefab using Guid(4dc2293ab5c561140872035453dd1c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb77f0ba4ffa207974f33fe05720418') in 0.261102 seconds 
+  Import took 0.264690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/Panzer_II_F.prefab
+  artifactKey: Guid(7c4525d5a46da0b47bbbdfd14c376381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/Panzer_II_F.prefab using Guid(7c4525d5a46da0b47bbbdfd14c376381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fe415850ba67513c4448df9be17d7c3') in 0.260108 seconds 
+  Import took 0.263581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/Panzer_VI_E.prefab
+  artifactKey: Guid(03bd5e3ea2209eb49a5742f90b548d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/Panzer_VI_E.prefab using Guid(03bd5e3ea2209eb49a5742f90b548d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9b11767b199ba7a4b5601e3c92e45c') in 0.273931 seconds 
+  Import took 0.277485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/M5A1_Stuart.prefab
+  artifactKey: Guid(7aff9190f32585948a8d7838a859933a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/M5A1_Stuart.prefab using Guid(7aff9190f32585948a8d7838a859933a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aba2827dfdd163c6ea5986601c5d6a8b') in 0.265625 seconds 
+  Import took 0.269173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/SOMUA_S35.prefab
+  artifactKey: Guid(1b29412902091814aaf3887729342d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/SOMUA_S35.prefab using Guid(1b29412902091814aaf3887729342d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '521ad1ef9f6f9ae5b68b56832c8dd684') in 0.327857 seconds 
+  Import took 0.331529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/WW2 Armed Forces Demo/Prefabs/KV_2.prefab
+  artifactKey: Guid(639da28ec7bc5cc47837261c20a2685c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WW2 Armed Forces Demo/Prefabs/KV_2.prefab using Guid(639da28ec7bc5cc47837261c20a2685c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc5cd35245b4c2cc77b3265108825a7') in 0.295341 seconds 
+  Import took 0.298960 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005718 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.922 seconds
+Domain Reload Profiling:
+	ReloadAssembly (922ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (761ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (274ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (274ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (175ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2417 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.5 MB.
+System memory in use after: 108.5 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2902.
+Total: 2.961500 ms (FindLiveObjects: 0.200000 ms CreateObjectMapping: 0.091200 ms MarkObjects: 2.564900 ms  DeleteObjects: 0.104600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6.910598 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack
+  artifactKey: Guid(6c23fc04951445b4e9947d867b4dc650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack using Guid(6c23fc04951445b4e9947d867b4dc650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618e8298f314312fa3839068556097fc') in 0.007731 seconds 
+  Import took 0.011126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.012266 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials
+  artifactKey: Guid(1bb4e22debd929144a3cadb359d6438d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials using Guid(1bb4e22debd929144a3cadb359d6438d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd25005ba661c1f818eba5220decf94') in 0.004771 seconds 
+  Import took 0.008052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.399662 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked
+  artifactKey: Guid(e1f0834381adaa84db1122df02343fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked using Guid(e1f0834381adaa84db1122df02343fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2aae481bbd736a536993dc450c76604') in 0.004755 seconds 
+  Import took 0.008077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.551346 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K
+  artifactKey: Guid(f3c8a0f2829ce7f45a0d810c11c45f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K using Guid(f3c8a0f2829ce7f45a0d810c11c45f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d6706a0add61a2a5a70b0322900958') in 0.004707 seconds 
+  Import took 0.008047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063743 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_FlatStoneBricks.mat
+  artifactKey: Guid(458f9785b61e3e44497e4efe82cc6748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_FlatStoneBricks.mat using Guid(458f9785b61e3e44497e4efe82cc6748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb46b9f83a8b3a3fd9fa5de92f5d3108') in 0.546234 seconds 
+  Import took 0.550020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_Preb_4K_StoneSlabs.mat
+  artifactKey: Guid(7cb3ff817340f9e4a90ec0b8345a48dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_Preb_4K_StoneSlabs.mat using Guid(7cb3ff817340f9e4a90ec0b8345a48dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06aaf8bb8bf791d58d5ebc4c133ffa6d') in 0.301277 seconds 
+  Import took 0.304688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_LargeStoneBricksTiled.mat
+  artifactKey: Guid(3b44bde9fa6caaa439b394bb46b1677d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_LargeStoneBricksTiled.mat using Guid(3b44bde9fa6caaa439b394bb46b1677d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff0967979143ab95f7a8d31ed046440') in 0.318971 seconds 
+  Import took 0.322365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_StoneBricksWithMoss.mat
+  artifactKey: Guid(85ad0ccfa668175419dad18edb1069da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_StoneBricksWithMoss.mat using Guid(85ad0ccfa668175419dad18edb1069da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9332c4649b7c3e754e8f9f130c5f6e8') in 0.739282 seconds 
+  Import took 0.745208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_Preb_4K_StoneWithMoss.mat
+  artifactKey: Guid(8b401c03d7545304bbad08adb91f76c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_Preb_4K_StoneWithMoss.mat using Guid(8b401c03d7545304bbad08adb91f76c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1322139ded2f7ba1b303d36537f7a0eb') in 0.764491 seconds 
+  Import took 0.770538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_StoneBricks.mat
+  artifactKey: Guid(d7b54407c58f0864f9b6838e239b06b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_StoneBricks.mat using Guid(d7b54407c58f0864f9b6838e239b06b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c217a0424876356f33b307bec071031a') in 0.776754 seconds 
+  Import took 0.782761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_Stone.mat
+  artifactKey: Guid(8628bbb96b7452f408391633ad99fd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_Stone.mat using Guid(8628bbb96b7452f408391633ad99fd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8a7bbd549249c44db684c369a77cc8') in 0.826376 seconds 
+  Import took 0.832216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_LargeStoneBricks.mat
+  artifactKey: Guid(3688442759f523043b71f5ed37ea58e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_LargeStoneBricks.mat using Guid(3688442759f523043b71f5ed37ea58e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de8fa563a8350fde7abafec2ca0b1a60') in 0.017728 seconds 
+  Import took 0.021382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_Preb_4K_SquareStoneTilesWithMoss.mat
+  artifactKey: Guid(dbd746886cff22446944d269cd99c496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_Preb_4K_SquareStoneTilesWithMoss.mat using Guid(dbd746886cff22446944d269cd99c496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a670a775102317951e3588943321572') in 0.341979 seconds 
+  Import took 0.345479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_FlatStoneBricksWithMoss.mat
+  artifactKey: Guid(c2d573fb3fcea8446966e6eb1c318b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_PreB_4K_FlatStoneBricksWithMoss.mat using Guid(c2d573fb3fcea8446966e6eb1c318b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '516babc7e0b39ef7835fe3765d854778') in 0.272531 seconds 
+  Import took 0.275908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures
+  artifactKey: Guid(6bf7be7967da09f4bbe9b60551d92950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures using Guid(6bf7be7967da09f4bbe9b60551d92950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d575b7a83e23469f7aa6a5c48412c6') in 0.004589 seconds 
+  Import took 0.007628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_Preb_4K_StoneSlabsWithMoss.mat
+  artifactKey: Guid(24b59fe7c355b7d42adf868037e8cc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_Preb_4K_StoneSlabsWithMoss.mat using Guid(24b59fe7c355b7d42adf868037e8cc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583b15caf2008fc6670b1aec3e3c1f92') in 0.763858 seconds 
+  Import took 0.769903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_Preb_4K_SquareStoneTiles.mat
+  artifactKey: Guid(fd8b812f2afcb2b4c877e4d588757bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Materials/MDP_Mat_PreBaked/MDP_Mat_PreB_4K/MDP_Mat_Preb_4K_SquareStoneTiles.mat using Guid(fd8b812f2afcb2b4c877e4d588757bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de89ae933f28ca8e6bc23489bdb45109') in 0.830750 seconds 
+  Import took 0.836658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/StoneDetails_normal.tif
+  artifactKey: Guid(8ba8e9c0c61437b43a671e1a61b154bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/StoneDetails_normal.tif using Guid(8ba8e9c0c61437b43a671e1a61b154bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263da508598f080afe0a890419c84df1') in 0.050150 seconds 
+  Import took 0.053327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K
+  artifactKey: Guid(71db76a5fe42c9d489fa4efd25503df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K using Guid(71db76a5fe42c9d489fa4efd25503df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb5d0e95e59883f37573332c452bc74') in 0.004659 seconds 
+  Import took 0.007705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.057451 seconds.
+  path: Assets/Simple Warships/Demo Scene
+  artifactKey: Guid(7f5edbd4e326f7f40aa86158651a60ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Demo Scene using Guid(7f5edbd4e326f7f40aa86158651a60ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece01fc4a564ed65b798186f6169d5d3') in 0.005088 seconds 
+  Import took 0.008799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.139754 seconds.
+  path: Assets/Simple Warships/Demo Scene/ReadMe.txt
+  artifactKey: Guid(d79733c473bc2a1429566a22e23d8f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Warships/Demo Scene/ReadMe.txt using Guid(d79733c473bc2a1429566a22e23d8f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee3b6a9e66feb0458a266a0cb3861a2') in 0.007680 seconds 
+  Import took 0.011069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.897241 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures
+  artifactKey: Guid(2a94932277a16ba439e57c381a4a13f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures using Guid(2a94932277a16ba439e57c381a4a13f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cea36bd246c1c57e9557571df1e539c5') in 0.005049 seconds 
+  Import took 0.008967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.726165 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks
+  artifactKey: Guid(38d4242ba40f7a94eb79c52ec81b334e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks using Guid(38d4242ba40f7a94eb79c52ec81b334e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ec5ff3872438e75c49a2c4bb2e628a') in 0.004995 seconds 
+  Import took 0.008431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062583 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks/MDP_Tex_PreB_4K_FlatStoneBricks_AlbedoTransparency.tif
+  artifactKey: Guid(c2b9035728a989a4284e90da25a6fc4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks/MDP_Tex_PreB_4K_FlatStoneBricks_AlbedoTransparency.tif using Guid(c2b9035728a989a4284e90da25a6fc4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df26a8ffbd4653105fa31d2c2a4182f9') in 0.010798 seconds 
+  Import took 0.014175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks/MDP_Tex_PreB_4K_FlatStoneBricks_Height.tif
+  artifactKey: Guid(6b25f500a0aa2d1488237e695832b863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks/MDP_Tex_PreB_4K_FlatStoneBricks_Height.tif using Guid(6b25f500a0aa2d1488237e695832b863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce2839632f87e0ea37d8ba0278be43b1') in 0.019935 seconds 
+  Import took 0.022997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks/MDP_Tex_PreB_4K_FlatStoneBricks_Normal.tif
+  artifactKey: Guid(7b0e74f5e8eddca418a28362af40b475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks/MDP_Tex_PreB_4K_FlatStoneBricks_Normal.tif using Guid(7b0e74f5e8eddca418a28362af40b475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '047e4e5697a9269d9169f25c295f7151') in 0.011894 seconds 
+  Import took 0.015061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks/MDP_Tex_PreB_4K_FlatStoneBricks_AO.tif
+  artifactKey: Guid(ee2962a7871f0ef449f0760ddab88bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks/MDP_Tex_PreB_4K_FlatStoneBricks_AO.tif using Guid(ee2962a7871f0ef449f0760ddab88bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e010e38e51e0df3b1cff2c908f0637a') in 0.009920 seconds 
+  Import took 0.013477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks/MDP_Tex_PreB_4K_FlatStoneBricks_MetallicSmoothness.tif
+  artifactKey: Guid(9c49ad955c869414f860ad8ca9b6b455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adventure Forge Studio/Modular Dungeon Pack/MDP_Textures/MDP_Tex_Prebaked_Textures/MDP_Tex_PreB_4K/MDP_Tex_PreB_4K_FlatStoneBricks/MDP_Tex_PreB_4K_FlatStoneBricks_MetallicSmoothness.tif using Guid(9c49ad955c869414f860ad8ca9b6b455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba69e4f78c4d7da13cc4e83539fbc1f2') in 0.011359 seconds 
+  Import took 0.014574 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005689 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.895 seconds
+Domain Reload Profiling:
+	ReloadAssembly (896ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (738ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (262ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (268ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2417 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.7 MB.
+System memory in use after: 108.7 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2908.
+Total: 2.943400 ms (FindLiveObjects: 0.167700 ms CreateObjectMapping: 0.102800 ms MarkObjects: 2.569300 ms  DeleteObjects: 0.102700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
