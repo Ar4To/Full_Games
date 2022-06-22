@@ -39,9 +39,13 @@ public class AI : MonoBehaviour
         {
             Destroy(gameObject, 0.1f);
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 >>>>>>> parent of 966d28d6 (20/06/modelagem de um cara)
+=======
+            Debug.Log("gozei");
+>>>>>>> parent of 9e59ce80 (22/06_Anim_Soldier)
         }
     }
 
@@ -55,11 +59,17 @@ public class AI : MonoBehaviour
         if (other.gameObject.CompareTag("Soldier2"))
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             Debug.Log("stopiing");
             anim.SetBool("StopEnemy", true);
             anim.SetBool("atirar",true);
 =======
 >>>>>>> parent of 966d28d6 (20/06/modelagem de um cara)
+=======
+
+            anim.SetBool("StopEnemy", true);
+            anim.SetTrigger("atirar");
+>>>>>>> parent of 9e59ce80 (22/06_Anim_Soldier)
             
             soldierTransform = other.gameObject.GetComponent<Transform>();
            
@@ -67,12 +77,6 @@ public class AI : MonoBehaviour
 
 
 <<<<<<< HEAD
-        }
-        else
-        {
-            anim.SetBool("StopEnemy", false);
-            anim.SetBool("atirar", false);
-            Debug.Log("run");
         }
         
 =======
