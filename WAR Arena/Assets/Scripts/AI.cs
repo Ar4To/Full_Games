@@ -39,7 +39,7 @@ public class AI : MonoBehaviour
         if (collision.gameObject.CompareTag("Player2"))
         {
             Destroy(gameObject, 0.1f);
-            Debug.Log("gozei");
+            
         }
       
     }
@@ -53,15 +53,21 @@ public class AI : MonoBehaviour
         #region interação tropas inimigas
         if (other.gameObject.CompareTag("Soldier2"))
         {
-
+            Debug.Log("stopiing");
             anim.SetBool("StopEnemy", true);
-            anim.SetTrigger("atirar");
+            anim.SetBool("atirar",true);
             
             soldierTransform = other.gameObject.GetComponent<Transform>();
 
             //moves.SetDestination(transform.position);
             
 
+        }
+        else
+        {
+            anim.SetBool("StopEnemy", false);
+            anim.SetBool("atirar", false);
+            Debug.Log("run");
         }
         
         #endregion[
