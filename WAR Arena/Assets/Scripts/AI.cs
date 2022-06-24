@@ -48,19 +48,21 @@ public class AI : MonoBehaviour
 
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         #region interação tropas inimigas
         if (other.gameObject.CompareTag("Soldier2"))
         {
-            Debug.Log("stopiing");
+            Debug.Log(other.gameObject);
             anim.SetBool("StopEnemy", true);
             anim.SetBool("atirar",true);
+          
             
-            soldierTransform = other.gameObject.GetComponent<Transform>();
+           soldierTransform = other.gameObject.GetComponent<Transform>();
 
             //moves.SetDestination(transform.position);
-            
+          
+
 
         }
         else
@@ -86,6 +88,7 @@ public class AI : MonoBehaviour
 
        
     }
+   
     
 
 }
