@@ -220,16 +220,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTransform: {fileID: 0}
-  soldierTransform: {fileID: 0}
-  bazookaTransform: {fileID: 0}
-  tankTransform: {fileID: 0}
-  shipTransform: {fileID: 0}
-  planeTransform: {fileID: 0}
-  allySoldier: {fileID: 0}
-  allyBazooka: {fileID: 0}
-  allyTank: {fileID: 0}
-  allyShip: {fileID: 0}
-  allyPlane: {fileID: 0}
   moves: {fileID: 0}
   damage: 0
   life: 0
@@ -244,8 +234,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3.05
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 2.5
+  m_Center: {x: 0, y: 0, z: 1}
 --- !u!54 &6445879655816237988
 Rigidbody:
   m_ObjectHideFlags: 0

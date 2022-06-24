@@ -17,7 +17,7 @@ public class IAStopDistance : MonoBehaviour
     {
 
         //print(scriptAI.moves.destination);
-        print(scriptAI.soldierTransform.position);
+        //print(scriptAI.soldierTransform.position);
 
 
     }
@@ -28,7 +28,7 @@ public class IAStopDistance : MonoBehaviour
         if (other.gameObject.CompareTag("Soldier2"))
         {
             //soldierTransform = GameObject.FindWithTag("Soldier2").transform;
-            scriptAI.soldierTransform = other.gameObject.GetComponent<Transform>();
+            //scriptAI.soldierTransform = other.gameObject.GetComponent<Transform>();
             //moves.SetDestination(soldierTransform.position);
             //scriptAI.moves.SetDestination(scriptAI.soldierTransform.position);
             print(scriptAI.moves.destination);

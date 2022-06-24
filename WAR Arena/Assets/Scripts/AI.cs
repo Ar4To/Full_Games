@@ -8,8 +8,8 @@ public class AI : MonoBehaviour
 {
     
      public Transform enemyTransform;
-    public Transform soldierTransform, bazookaTransform, tankTransform, shipTransform, planeTransform;
-    public Transform allySoldier, allyBazooka, allyTank, allyShip, allyPlane;
+    //public Transform soldierTransform, bazookaTransform, tankTransform, shipTransform, planeTransform;
+    //public Transform allySoldier, allyBazooka, allyTank, allyShip, allyPlane;
     public NavMeshAgent moves;
     public float damage, life;
     private bool attacking;
@@ -58,10 +58,29 @@ public class AI : MonoBehaviour
             anim.SetBool("atirar",true);
           
             
-           soldierTransform = other.gameObject.GetComponent<Transform>();
+           //soldierTransform = other.gameObject.GetComponent<Transform>();
 
             //moves.SetDestination(transform.position);
-          
+         
+        }
+        else
+        {
+            anim.SetBool("StopEnemy", false);
+            anim.SetBool("atirar", false);
+            Debug.Log("run");
+        }
+/*
+        if (other.gameObject.CompareTag("Bazooka2"))
+        {
+            Debug.Log(other.gameObject);
+            anim.SetBool("StopEnemy", true);
+            anim.SetBool("atirar", true);
+
+
+            //soldierTransform = other.gameObject.GetComponent<Transform>();
+
+            //moves.SetDestination(transform.position);
+
 
 
         }
@@ -71,23 +90,187 @@ public class AI : MonoBehaviour
             anim.SetBool("atirar", false);
             Debug.Log("run");
         }
-        
-        #endregion[
-    }
 
-
-
-    
-    void Ally()
-    {
-        if (Vector3.Distance(transform.position, soldierTransform.position) <= moves.stoppingDistance + 5)
+        if (other.gameObject.CompareTag("Tank2"))
         {
-            this.GetComponent<NavMeshAgent>().speed = 0.2f;
-            
+            Debug.Log(other.gameObject);
+            anim.SetBool("StopEnemy", true);
+            anim.SetBool("atirar", true);
+
+
+            //soldierTransform = other.gameObject.GetComponent<Transform>();
+
+            //moves.SetDestination(transform.position);
+
+
+
+        }
+        else
+        {
+            anim.SetBool("StopEnemy", false);
+            anim.SetBool("atirar", false);
+            Debug.Log("run");
         }
 
-       
+        if (other.gameObject.CompareTag("Ship2"))
+        {
+            Debug.Log(other.gameObject);
+            anim.SetBool("StopEnemy", true);
+            anim.SetBool("atirar", true);
+
+
+            //soldierTransform = other.gameObject.GetComponent<Transform>();
+
+            //moves.SetDestination(transform.position);
+
+
+
+        }
+        else
+        {
+            anim.SetBool("StopEnemy", false);
+            anim.SetBool("atirar", false);
+            Debug.Log("run");
+        }
+
+        if (other.gameObject.CompareTag("Plane2"))
+        {
+            Debug.Log(other.gameObject);
+            anim.SetBool("StopEnemy", true);
+            anim.SetBool("atirar", true);
+
+
+           // soldierTransform = other.gameObject.GetComponent<Transform>();
+
+            //moves.SetDestination(transform.position);
+
+
+
+        }
+        else
+        {
+            anim.SetBool("StopEnemy", false);
+            anim.SetBool("atirar", false);
+            Debug.Log("run");
+        }
+        #endregion[
+
+        #region interação tropas aliadas
+
+        if (other.gameObject.CompareTag("Soldier"))
+        {
+            Debug.Log(other.gameObject);
+            anim.SetBool("StopEnemy", true);
+           //anim.SetBool("atirar", true);
+
+
+            //soldierTransform = other.gameObject.GetComponent<Transform>();
+
+            //moves.SetDestination(transform.position);
+
+
+
+        }
+        else
+        {
+            anim.SetBool("StopEnemy", false);
+            anim.SetBool("atirar", false);
+            Debug.Log("run");
+        }
+        if (other.gameObject.CompareTag("Bazooka"))
+        {
+            Debug.Log(other.gameObject);
+            anim.SetBool("StopEnemy", true);
+            //anim.SetBool("atirar", true);
+
+
+            //soldierTransform = other.gameObject.GetComponent<Transform>();
+
+            //moves.SetDestination(transform.position);
+
+
+
+        }
+        else
+        {
+            anim.SetBool("StopEnemy", false);
+            anim.SetBool("atirar", false);
+            Debug.Log("run");
+        }
+
+        if (other.gameObject.CompareTag("Tank"))
+        {
+            Debug.Log(other.gameObject);
+            anim.SetBool("StopEnemy", true);
+            //anim.SetBool("atirar", true);
+
+
+           // soldierTransform = other.gameObject.GetComponent<Transform>();
+
+            //moves.SetDestination(transform.position);
+
+
+
+        }
+        else
+        {
+            anim.SetBool("StopEnemy", false);
+            anim.SetBool("atirar", false);
+            Debug.Log("run");
+        }
+
+        if (other.gameObject.CompareTag("Ship"))
+        {
+            Debug.Log(other.gameObject);
+            anim.SetBool("StopEnemy", true);
+            //anim.SetBool("atirar", true);
+
+
+            //soldierTransform = other.gameObject.GetComponent<Transform>();
+
+            //moves.SetDestination(transform.position);
+
+
+
+        }
+        else
+        {
+            anim.SetBool("StopEnemy", false);
+            anim.SetBool("atirar", false);
+            Debug.Log("run");
+        }
+
+        if (other.gameObject.CompareTag("Plane"))
+        {
+            Debug.Log(other.gameObject);
+            anim.SetBool("StopEnemy", true);
+            //anim.SetBool("atirar", true);
+
+
+            //soldierTransform = other.gameObject.GetComponent<Transform>();
+
+            //moves.SetDestination(transform.position);
+
+
+
+        }
+        else
+        {
+            anim.SetBool("StopEnemy", false);
+            anim.SetBool("atirar", false);
+            Debug.Log("run");
+        }
+
+        */
+
+        #endregion
     }
+
+
+
+
+   
+
    
     
 
