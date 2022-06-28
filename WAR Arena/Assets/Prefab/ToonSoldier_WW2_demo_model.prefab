@@ -221,8 +221,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTransform: {fileID: 0}
   moves: {fileID: 0}
-  damage: 0
-  life: 0
+  damage: 3
+  life: 10
+  timeDamage: 0
 --- !u!135 &-3433417111683331870
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -234,8 +235,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.5
-  m_Center: {x: 0, y: 0, z: 1}
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 1, z: 0.4}
 --- !u!54 &6445879655816237988
 Rigidbody:
   m_ObjectHideFlags: 0

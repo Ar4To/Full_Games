@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.AI;
 
-public class AI : MonoBehaviour
+public class AI2 : MonoBehaviour
 {
-    
+
     public Transform enemyTransform;
-    private AI2 enemyAI;
-    private AI allyAI;
+    private AI enemyAI;
+    private AI2 allyAI;
     public NavMeshAgent moves;
     public float damage, life;
     [SerializeField]
@@ -20,10 +20,10 @@ public class AI : MonoBehaviour
     void Start()
     {
         moves = GetComponent<NavMeshAgent>();
-        
+
         enemyTransform = GameObject.Find("PLAYER 2").transform;
         anim = GetComponent<Animator>();
-       
+
     }
     // Update is called once per frame
     void Update()
@@ -34,7 +34,7 @@ public class AI : MonoBehaviour
 
         if (life <= 0)
             Destroy(gameObject);
-        
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -42,9 +42,9 @@ public class AI : MonoBehaviour
         if (collision.gameObject.CompareTag("Player2"))
         {
             Destroy(gameObject, 0.1f);
-            
+
         }
-      
+
     }
 
 
@@ -54,25 +54,25 @@ public class AI : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         #region interação tropas inimigas
-        if (other.gameObject.CompareTag("Soldier2"))
+        if (other.gameObject.CompareTag("Soldier"))
         {
-            enemyAI = other.GetComponent<AI2>();
+            enemyAI = other.GetComponent<AI>();
             Debug.Log(other.gameObject);
             anim.SetBool("StopEnemy", true);
-           
-            anim.SetBool("atirar",true);
+
+            anim.SetBool("atirar", true);
             attacking = true;
             if (timeDamage <= 0)
             {
                 life = life - enemyAI.damage;
                 timeDamage = 1;
             }
-          
-            
-           //soldierTransform = other.gameObject.GetComponent<Transform>();
+
+
+            //soldierTransform = other.gameObject.GetComponent<Transform>();
 
             //moves.SetDestination(transform.position);
-         
+
         }
         else
         {
@@ -170,9 +170,9 @@ public class AI : MonoBehaviour
 
         #region interação tropas aliadas
 
-        if (other.gameObject.CompareTag("Soldier"))
+        if (other.gameObject.CompareTag("Soldier2"))
         {
-            allyAI = other.gameObject.GetComponent<AI>();
+            allyAI = other.gameObject.GetComponent<AI2>();
             Debug.Log(other.gameObject);
             anim.SetBool("StopEnemy", true);
             //anim.SetBool("atirar", true);
@@ -284,10 +284,10 @@ public class AI : MonoBehaviour
 
 
 
-   
 
-   
-    
+
+
+
 
 }
 

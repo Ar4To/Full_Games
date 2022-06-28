@@ -1827,7 +1827,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 1
+  m_CollisionDetection: 3
 --- !u!1 &789383832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,6 +3278,9 @@ GameObject:
   - component: {fileID: 1773822955}
   - component: {fileID: 1773822954}
   - component: {fileID: 1773822958}
+  - component: {fileID: 1773822959}
+  - component: {fileID: 1773822960}
+  - component: {fileID: 1773822961}
   m_Layer: 0
   m_Name: 'Cylinder '
   m_TagString: Soldier2
@@ -3377,7 +3380,59 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 1
+  m_CollisionDetection: 3
+--- !u!114 &1773822959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773822953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d026e95c8ca71648a37a3c9aa87038d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTransform: {fileID: 0}
+  moves: {fileID: 1773822960}
+  damage: 3
+  life: 10
+  timeDamage: 0
+--- !u!195 &1773822960
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773822953}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5000001
+  m_Speed: 0
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!135 &1773822961
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773822953}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: -0.4, y: 0, z: 0}
 --- !u!1 &1876303831
 GameObject:
   m_ObjectHideFlags: 0
@@ -3573,7 +3628,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -3433417111683331870, guid: 2599104a4a2a5214f8407d03827b5eff, type: 3}
       propertyPath: m_Radius
-      value: 2.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: -3433417111683331870, guid: 2599104a4a2a5214f8407d03827b5eff, type: 3}
       propertyPath: m_Center.x
@@ -3581,7 +3636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3433417111683331870, guid: 2599104a4a2a5214f8407d03827b5eff, type: 3}
       propertyPath: m_Center.z
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 111614, guid: 2599104a4a2a5214f8407d03827b5eff, type: 3}
       propertyPath: m_Name
@@ -3631,6 +3686,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1383893878735680603, guid: 2599104a4a2a5214f8407d03827b5eff, type: 3}
+      propertyPath: life
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4753206175111560887, guid: 2599104a4a2a5214f8407d03827b5eff, type: 3}
       propertyPath: m_Speed
       value: 1.1
@@ -3649,7 +3708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6445879655816237988, guid: 2599104a4a2a5214f8407d03827b5eff, type: 3}
       propertyPath: m_CollisionDetection
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2599104a4a2a5214f8407d03827b5eff, type: 3}
