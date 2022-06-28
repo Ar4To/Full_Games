@@ -14,7 +14,6 @@ public class AI : MonoBehaviour
     public float damage, life;
     [SerializeField]
     private float timeDamage;
-    private bool attacking;
     private Animator anim;
 
     void Start()
@@ -61,7 +60,7 @@ public class AI : MonoBehaviour
             anim.SetBool("StopEnemy", true);
            
             anim.SetBool("atirar",true);
-            attacking = true;
+           
             if (timeDamage <= 0)
             {
                 life = life - enemyAI.damage;
@@ -78,7 +77,7 @@ public class AI : MonoBehaviour
         {
             anim.SetBool("StopEnemy", false);
             anim.SetBool("atirar", false);
-            attacking = false;
+            
             Debug.Log("run");
         }
         /*
@@ -172,21 +171,16 @@ public class AI : MonoBehaviour
 
         if (other.gameObject.CompareTag("Soldier"))
         {
-            allyAI = other.gameObject.GetComponent<AI>();
+            
+            
             Debug.Log(other.gameObject);
             anim.SetBool("StopEnemy", true);
-            //anim.SetBool("atirar", true);
-
-
-            //soldierTransform = other.gameObject.GetComponent<Transform>();
-
-            //moves.SetDestination(transform.position);
-
-
+          
 
         }
-        else if (allyAI.attacking == false)
+        else if (!other.GetComponent<Animator>().GetBool("atirar"))
         {
+            
             anim.SetBool("StopEnemy", false);
             anim.SetBool("atirar", false);
             Debug.Log("run");
