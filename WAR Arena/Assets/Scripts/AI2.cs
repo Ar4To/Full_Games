@@ -8,8 +8,8 @@ public class AI2 : MonoBehaviour
 {
 
     public Transform enemyTransform;
-    private AI2 enemyAI;
-    private AI allyAI;
+    private AI enemyAI;
+    private AI2 allyAI;
     public NavMeshAgent moves;
     public float damage, life;
     [SerializeField]
@@ -37,34 +37,24 @@ public class AI2 : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player2"))
         {
             Destroy(gameObject, 0.1f);
 
         }
 
-    }
-
-
-
-
-
-    private void OnTriggerStay(Collider other)
-    {
-        #region interação tropas inimigas
-        if (other.gameObject.CompareTag("Soldier"))
+        if (other.gameObject.CompareTag("Soldier2"))
         {
             if (!actualEnemy)
             {
                 actualEnemy = other.gameObject;
             }
 
-            enemyAI = other.GetComponent<AI2>();
+            enemyAI = other.gameObject.GetComponent<AI>();
             Debug.Log(other.gameObject);
             anim.SetBool("StopEnemy", true);
-
             anim.SetTrigger("atirar");
 
             if (timeDamage <= 0)
@@ -74,10 +64,45 @@ public class AI2 : MonoBehaviour
             }
 
 
-
+            if (other.gameObject.CompareTag("Soldier2"))
+            {
+                anim.SetBool("StopEnemy", true);
+            }
 
         }
+    }
 
+
+
+
+
+    private void OnTriggerStay(Collider other)
+    {
+
+        #region interação tropas inimigas
+        /*if (other.gameObject.CompareTag("Soldier2"))
+        {
+            if (!actualEnemy)
+            {
+                actualEnemy = other.gameObject;
+            }
+
+            enemyAI2 = other.GetComponent<AI2>();
+            Debug.Log(other.gameObject);
+            anim.SetBool("StopEnemy", true);
+            anim.SetTrigger("atirar");
+           
+            if (timeDamage <= 0)
+            {
+                life = life - enemyAI2.damage;
+                timeDamage = 1;
+            }
+          
+            
+           
+         
+        }
+      */
         #endregion[
 
         #region interação tropas aliadas
@@ -100,22 +125,35 @@ public class AI2 : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-       
 
+        if (other.gameObject.CompareTag("Soldier"))
+        {
             anim.SetBool("StopEnemy", false);
-           
-            Debug.Log("run");
-        
+        }
+        Debug.Log("triggerexit");
+
     }
 
-    private void OnDestroy()
+    private void OnTriggerEnter(Collider other)
     {
-        actualEnemy.GetComponentInParent<Animator>().SetBool("StopEnemy", false);
-       
 
-        Debug.Log("run");
+
+        if (other.gameObject.CompareTag("Soldier"))
+        {
+            anim.SetBool("StopEnemy", true);
+        }
+
+
     }
 
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Soldier"))
+        {
+            anim.SetBool("StopEnemy", false);
+        }
+        Debug.Log("triggerexit");
+    }
 
 
 
