@@ -35,8 +35,16 @@ public class AI2 : MonoBehaviour
         if (life <= 0)
             Destroy(gameObject);
 
-    }
+        if(!anim.GetBool("StopEnemy"))
+            {
+              
+            }
+            
 
+        
+
+    }
+    /*
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player2"))
@@ -45,7 +53,7 @@ public class AI2 : MonoBehaviour
 
         }
 
-        if (other.gameObject.CompareTag("Soldier2"))
+        if (other.gameObject.CompareTag("Soldier"))
         {
             if (!actualEnemy)
             {
@@ -64,65 +72,46 @@ public class AI2 : MonoBehaviour
             }
 
 
-            if (other.gameObject.CompareTag("Soldier2"))
+            if (other.gameObject.CompareTag("Soldier"))
             {
                 anim.SetBool("StopEnemy", true);
             }
 
         }
     }
-
-
-
-
-
-    private void OnTriggerStay(Collider other)
+    */
+    private void OnCollisionStay(Collision other)
     {
-
-        #region interação tropas inimigas
-        /*if (other.gameObject.CompareTag("Soldier2"))
+        if (other.gameObject.CompareTag("Soldier"))
         {
             if (!actualEnemy)
             {
                 actualEnemy = other.gameObject;
             }
 
-            enemyAI2 = other.GetComponent<AI2>();
+            enemyAI = other.gameObject.GetComponent<AI>();
             Debug.Log(other.gameObject);
             anim.SetBool("StopEnemy", true);
             anim.SetTrigger("atirar");
-           
+
             if (timeDamage <= 0)
             {
-                life = life - enemyAI2.damage;
-                timeDamage = 1;
+                life = life - enemyAI.damage;
+                timeDamage = 2;
             }
-          
-            
+
            
-         
         }
-      */
-        #endregion[
-
-        #region interação tropas aliadas
-
-        if (other.gameObject.CompareTag("Soldier2"))
-        {
-
-
-            Debug.Log(other.gameObject);
-            anim.SetBool("StopEnemy", true);
-
-
-        }
-
-
-        #endregion
-
-
-
+       
     }
+
+
+
+   
+
+       
+
+        
     private void OnTriggerExit(Collider other)
     {
 

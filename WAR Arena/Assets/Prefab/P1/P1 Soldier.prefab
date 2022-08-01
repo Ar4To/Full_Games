@@ -650,7 +650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3708320884464714552}
   m_LocalRotation: {x: 0.6117145, y: -0.3618144, z: -0.5575528, w: -0.42898798}
-  m_LocalPosition: {x: -0.09832462, y: -0.000000012417635, z: 0.11829058}
+  m_LocalPosition: {x: -0.09832465, y: -0.000000012417635, z: 0.11829058}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
   m_Children:
   - {fileID: 3708320884464372930}
@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 6281475281894578372}
   m_Layer: 0
   m_Name: P1 Soldier
-  m_TagString: Soldier2
+  m_TagString: Soldier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -784,7 +784,7 @@ MonoBehaviour:
   moves: {fileID: 0}
   damage: 3
   life: 10
-  timeDamage1: 0
+  timeDamage: 0
   anim: {fileID: 0}
   actualEnemy: {fileID: 0}
 --- !u!54 &7638887095699189870
@@ -937,7 +937,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3708320884464734918}
   m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: -0.0000000031044083, y: 1.2235096, z: -0.03563245}
+  m_LocalPosition: {x: 0.0000000031044083, y: 1.2235096, z: -0.03563245}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
   m_Children:
   - {fileID: 3708320884464321288}
@@ -957,7 +957,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1
-  m_Center: {x: -2.5, y: 0, z: 0}
+  m_Center: {x: -2.5, y: 1.5, z: 0}
 --- !u!1 &3708320884464736236
 GameObject:
   m_ObjectHideFlags: 0

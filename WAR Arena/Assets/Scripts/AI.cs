@@ -13,7 +13,7 @@ public class AI : MonoBehaviour
     public NavMeshAgent moves;
     public float damage, life;
     [SerializeField]
-    private float timeDamage1;
+    private float timeDamage;
     [SerializeField]
     private Animator anim;
     [SerializeField]
@@ -31,14 +31,14 @@ public class AI : MonoBehaviour
     void Update()
     {
 
-        timeDamage1 -= Time.deltaTime;
+        timeDamage -= Time.deltaTime;
         moves.destination = enemyTransform.position;
 
         if (life <= 0)
             Destroy(gameObject);
         
     }
-
+    
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player2"))
@@ -46,7 +46,7 @@ public class AI : MonoBehaviour
             Destroy(gameObject, 0.1f);
             
         }
-
+        /*
         if (other.gameObject.CompareTag("Soldier2"))
         {
             if (!actualEnemy)
@@ -70,61 +70,46 @@ public class AI : MonoBehaviour
             {
                 anim.SetBool("StopEnemy", true);
             }
-
+       
         }
+        */
     }
-
-
-
-
-
-    private void OnTriggerStay(Collider other)
+    
+    private void OnCollisionStay(Collision other)
     {
-        
-        #region interação tropas inimigas
-        /*if (other.gameObject.CompareTag("Soldier2"))
+        if (other.gameObject.CompareTag("Soldier2"))
         {
             if (!actualEnemy)
             {
                 actualEnemy = other.gameObject;
             }
 
-            enemyAI2 = other.GetComponent<AI2>();
+            enemyAI2 = other.gameObject.GetComponent<AI2>();
             Debug.Log(other.gameObject);
             anim.SetBool("StopEnemy", true);
             anim.SetTrigger("atirar");
-           
+
             if (timeDamage <= 0)
             {
                 life = life - enemyAI2.damage;
-                timeDamage = 1;
+                timeDamage = 2;
             }
-          
-            
-           
-         
-        }
-      */
-        #endregion[
 
-        #region interação tropas aliadas
 
-        if (other.gameObject.CompareTag("Soldier"))
-        {
-            
-            
-            Debug.Log(other.gameObject);
-            anim.SetBool("StopEnemy", true);
-          
+            if (other.gameObject.CompareTag("Soldier2"))
+            {
+                anim.SetBool("StopEnemy", true);
+            }
 
         }
-       
+        else
+            anim.SetBool("StopEnemy", false);
 
-        #endregion
-
-        
-       
     }
+
+
+
+
     private void OnTriggerExit(Collider other)
     {
 

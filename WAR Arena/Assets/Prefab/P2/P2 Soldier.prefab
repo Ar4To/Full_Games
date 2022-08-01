@@ -190,7 +190,7 @@ MonoBehaviour:
   moves: {fileID: 0}
   damage: 3
   life: 10
-  timeDamage1: 0
+  timeDamage: 0
   anim: {fileID: 0}
   actualEnemy: {fileID: 0}
 --- !u!54 &690160973802910592
@@ -349,7 +349,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1
-  m_Center: {x: -2.5, y: 1, z: 0}
+  m_Center: {x: -2.5, y: 2, z: 0}
 --- !u!1 &5829818298925437954
 GameObject:
   m_ObjectHideFlags: 0
