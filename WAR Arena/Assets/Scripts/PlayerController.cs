@@ -13,12 +13,12 @@ public class PlayerController : MonoBehaviour
     public Image lifeMAX; //vida maxima
     public GameObject [] soldiers; //prefab dos soldados
     private Transform spawner; //posição do spawner
-
+    
     // Start is called before the first frame update
     void Start()
     {
        spawner = GameObject.Find("Spawner1").transform;
-        
+      
     }
 
     // Update is called once per frame
@@ -116,31 +116,57 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Soldier"))
+        
+           
+            if (collision.gameObject.CompareTag("Soldier"))
+            {
+                life -= 5;
+            }
+
+            if (collision.gameObject.CompareTag("Bazooka"))
+            {
+                life -= 10;
+            }
+
+            if (collision.gameObject.CompareTag("Tank"))
+            {
+                life -= 27;
+            }
+
+            if (collision.gameObject.CompareTag("Ship"))
+            {
+                life -= 38;
+            }
+
+            if (collision.gameObject.CompareTag("Plane"))
+            {
+                life -= 50;
+            }
+
+        if (collision.gameObject.CompareTag("Soldier2"))
         {
             life -= 5;
         }
 
-        if (collision.gameObject.CompareTag("Bazooka"))
+        if (collision.gameObject.CompareTag("Bazooka2"))
         {
             life -= 10;
         }
 
-        if (collision.gameObject.CompareTag("Tank"))
+        if (collision.gameObject.CompareTag("Tank2"))
         {
             life -= 27;
         }
 
-        if (collision.gameObject.CompareTag("Ship"))
+        if (collision.gameObject.CompareTag("Ship2"))
         {
             life -= 38;
         }
 
-        if (collision.gameObject.CompareTag("Plane"))
+        if (collision.gameObject.CompareTag("Plane2"))
         {
             life -= 50;
         }
-    }
-
+    }    
 }
 

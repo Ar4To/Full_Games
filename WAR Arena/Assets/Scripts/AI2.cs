@@ -44,15 +44,15 @@ public class AI2 : MonoBehaviour
         
 
     }
-    /*
+    
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Player2"))
+        if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject, 0.1f);
 
         }
-
+        
         if (other.gameObject.CompareTag("Soldier"))
         {
             if (!actualEnemy)
@@ -78,8 +78,9 @@ public class AI2 : MonoBehaviour
             }
 
         }
+        
     }
-    */
+    
     private void OnCollisionStay(Collision other)
     {
         if (other.gameObject.CompareTag("Soldier"))
@@ -102,40 +103,30 @@ public class AI2 : MonoBehaviour
 
            
         }
-       
-    }
-
-
-
-   
-
-       
-
         
-    private void OnTriggerExit(Collider other)
-    {
-
-        if (other.gameObject.CompareTag("Soldier"))
+        if (other.gameObject.CompareTag("Tank"))
         {
-            anim.SetBool("StopEnemy", false);
-        }
-        Debug.Log("triggerexit");
+            if (!actualEnemy)
+            {
+                actualEnemy = other.gameObject;
+            }
 
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-
-
-        if (other.gameObject.CompareTag("Soldier"))
-        {
+            enemyAI = other.gameObject.GetComponent<AI>();
+            
             anim.SetBool("StopEnemy", true);
+            anim.SetTrigger("atirar");
+
+            if (timeDamage <= 0)
+            {
+                life = life - enemyAI.damage;
+                timeDamage = 2;
+            }
+
         }
-
-
+       
+        
     }
-
-    private void OnCollisionExit(Collision collision)
+       private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.CompareTag("Soldier"))
         {

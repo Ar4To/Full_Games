@@ -46,7 +46,7 @@ public class AI : MonoBehaviour
             Destroy(gameObject, 0.1f);
             
         }
-        /*
+        
         if (other.gameObject.CompareTag("Soldier2"))
         {
             if (!actualEnemy)
@@ -59,10 +59,10 @@ public class AI : MonoBehaviour
             anim.SetBool("StopEnemy", true);
             anim.SetTrigger("atirar");
 
-            if (timeDamage1 <= 0)
+            if (timeDamage <= 0)
             {
                 life = life - enemyAI2.damage;
-                timeDamage1 = 1;
+                timeDamage = 1;
             }
 
 
@@ -72,7 +72,7 @@ public class AI : MonoBehaviour
             }
        
         }
-        */
+        
     }
     
     private void OnCollisionStay(Collision other)
@@ -105,30 +105,50 @@ public class AI : MonoBehaviour
         else
             anim.SetBool("StopEnemy", false);
 
-    }
+        /*
+        if (other.gameObject.CompareTag("Tank2"))
+        {
+            if (!actualEnemy)
+            {
+                actualEnemy = other.gameObject;
+            }
 
+            enemyAI2 = other.gameObject.GetComponent<AI2>();
+            Debug.Log(other.gameObject);
+            anim.SetBool("StopEnemy", true);
+            anim.SetTrigger("atirar");
+
+            if (timeDamage <= 0)
+            {
+                life = life - enemyAI2.damage;
+                timeDamage = 2;
+            }
+
+
+            if (other.gameObject.CompareTag("Tank2"))
+            {
+                anim.SetBool("StopEnemy", true);
+            }
+
+        }
+        else
+            anim.SetBool("StopEnemy", false);
+        */
+    }
+        
 
 
 
     private void OnTriggerExit(Collider other)
     {
-
-        if (other.gameObject.CompareTag("Soldier2"))
-        {
-            anim.SetBool("StopEnemy", false);
-        }
-            Debug.Log("triggerexit");
-        
+       
     }
 
     private void OnTriggerEnter(Collider other)
     {
 
 
-        if (other.gameObject.CompareTag("Soldier2"))
-        {
-            anim.SetBool("StopEnemy", true);
-        }
+       
 
          
     }

@@ -1647,6 +1647,10 @@ PrefabInstance:
       propertyPath: enemyTransform
       value: 
       objectReference: {fileID: 2123629177}
+    - target: {fileID: 1667698034, guid: 2ebf979aaaeff1a45966f55f233733e7, type: 3}
+      propertyPath: m_AgentTypeID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 605512819774308200, guid: 2ebf979aaaeff1a45966f55f233733e7, type: 3}
       propertyPath: m_Name
       value: T_34_76
@@ -4036,7 +4040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3708320884464717876, guid: 319a11da21f5387448a0d21b47026d45, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 319a11da21f5387448a0d21b47026d45, type: 3}
