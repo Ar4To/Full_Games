@@ -139,19 +139,7 @@ public class AI : MonoBehaviour
 
 
 
-    private void OnTriggerExit(Collider other)
-    {
-       
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-
-
-       
-
-         
-    }
+   
 
     private void OnCollisionExit(Collision collision)
     {
