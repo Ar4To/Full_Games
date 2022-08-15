@@ -17,7 +17,11 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       spawner = GameObject.Find("Spawner1").transform;
+        if (gameObject.CompareTag("Player2"))
+        {
+            spawner = GameObject.Find("Spawner2").transform;
+        } else if(gameObject.CompareTag("Player"))
+         spawner = GameObject.Find("Spawner1").transform;
       
     }
 
@@ -116,8 +120,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
-           
+
+        if (gameObject.CompareTag("Player2"))
+        {
             if (collision.gameObject.CompareTag("Soldier"))
             {
                 life -= 5;
@@ -142,30 +147,34 @@ public class PlayerController : MonoBehaviour
             {
                 life -= 50;
             }
-
-        if (collision.gameObject.CompareTag("Soldier2"))
-        {
-            life -= 5;
         }
 
-        if (collision.gameObject.CompareTag("Bazooka2"))
+        if (gameObject.CompareTag("Player"))
         {
-            life -= 10;
-        }
+            if (collision.gameObject.CompareTag("Soldier2"))
+            {
+                life -= 5;
+            }
 
-        if (collision.gameObject.CompareTag("Tank2"))
-        {
-            life -= 27;
-        }
+            if (collision.gameObject.CompareTag("Bazooka2"))
+            {
+                life -= 10;
+            }
 
-        if (collision.gameObject.CompareTag("Ship2"))
-        {
-            life -= 38;
-        }
+            if (collision.gameObject.CompareTag("Tank2"))
+            {
+                life -= 27;
+            }
 
-        if (collision.gameObject.CompareTag("Plane2"))
-        {
-            life -= 50;
+            if (collision.gameObject.CompareTag("Ship2"))
+            {
+                life -= 38;
+            }
+
+            if (collision.gameObject.CompareTag("Plane2"))
+            {
+                life -= 50;
+            }
         }
     }    
 }

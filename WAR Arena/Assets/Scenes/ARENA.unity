@@ -871,7 +871,7 @@ MonoBehaviour:
   buyTime: 0.7
   moneyTxt: {fileID: 617428325}
   life: 100
-  lifeMAX: {fileID: 0}
+  lifeMAX: {fileID: 1912838055}
   soldiers:
   - {fileID: 3708320884464717876, guid: 319a11da21f5387448a0d21b47026d45, type: 3}
   - {fileID: 0}
@@ -1647,17 +1647,9 @@ PrefabInstance:
       propertyPath: enemyTransform
       value: 
       objectReference: {fileID: 2123629177}
-    - target: {fileID: 1667698034, guid: 2ebf979aaaeff1a45966f55f233733e7, type: 3}
-      propertyPath: m_AgentTypeID
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 605512819774308200, guid: 2ebf979aaaeff1a45966f55f233733e7, type: 3}
       propertyPath: m_Name
       value: T_34_76
-      objectReference: {fileID: 0}
-    - target: {fileID: 605512819774308200, guid: 2ebf979aaaeff1a45966f55f233733e7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4484581836420369787, guid: 2ebf979aaaeff1a45966f55f233733e7, type: 3}
       propertyPath: m_RootOrder
@@ -3697,6 +3689,7 @@ GameObject:
   - component: {fileID: 2123629175}
   - component: {fileID: 2123629174}
   - component: {fileID: 2123629178}
+  - component: {fileID: 2123629179}
   m_Layer: 0
   m_Name: PLAYER 2
   m_TagString: Player2
@@ -3797,6 +3790,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2123629179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123629173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b52c6275ccb99cc4abc0b38fbf8eb2df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyTime: 5
+  buyTime: 0.8
+  moneyTxt: {fileID: 0}
+  life: 100
+  lifeMAX: {fileID: 2088794670}
+  soldiers: []
 --- !u!1 &2133740140
 GameObject:
   m_ObjectHideFlags: 0
@@ -4144,6 +4155,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5829818298301327323, guid: 3341f5443f2f53f41beb2fb8f032695b, type: 3}
+      propertyPath: life
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5829818298301327323, guid: 3341f5443f2f53f41beb2fb8f032695b, type: 3}
       propertyPath: enemyTransform
       value: 
