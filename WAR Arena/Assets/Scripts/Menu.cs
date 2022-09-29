@@ -22,10 +22,7 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Lobby");
     }
 
-    public void ARENA()
-    {
-        SceneManager.LoadScene("ARENA");
-    }
+   
 
     public void Option()
     {

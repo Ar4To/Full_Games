@@ -3,45 +3,57 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.AI;
+using Photon.Pun;
 
-public class AI2 : MonoBehaviour
+public class AI2 : MonoBehaviourPunCallbacks
 {
 
     public Transform enemyTransform;
     private AI enemyAI;
     private AI2 allyAI;
     public NavMeshAgent moves;
-    public float damage, life;
+    private PlayerController Pcontroller;
+    public float damage, life, speedFloat;
     [SerializeField]
-    private float timeDamage;
+    private float timeDamage = 2;
     private Animator anim;
+    
     private GameObject actualEnemy;
 
     void Start()
     {
         moves = GetComponent<NavMeshAgent>();
 
-        enemyTransform = GameObject.Find("PLAYER 1").transform;
+        
+
+        
         anim = GetComponent<Animator>();
 
     }
     // Update is called once per frame
     void Update()
     {
+        enemyTransform = GameObject.Find("PLAYER 1").transform;
 
+        speedFloat -= Time.deltaTime;
         timeDamage -= Time.deltaTime;
         moves.destination = enemyTransform.position;
 
         if (life <= 0)
+        {
+            Pcontroller.money += 15;
             Destroy(gameObject);
+        }
 
-        if(!anim.GetBool("StopEnemy"))
+        if (speedFloat <= 0)
+        {
+            if (anim.GetBool("StopEnemy"))
             {
-              
+                anim.SetBool("StopEnemy", false);
+                GetComponent<NavMeshAgent>().speed = 1.1f;
+                speedFloat = 2;
             }
-            
-
-        
+        }
 
     }
     
@@ -55,22 +67,6 @@ public class AI2 : MonoBehaviour
         
         if (other.gameObject.CompareTag("Soldier"))
         {
-            if (!actualEnemy)
-            {
-                actualEnemy = other.gameObject;
-            }
-
-            enemyAI = other.gameObject.GetComponent<AI>();
-            Debug.Log(other.gameObject);
-            anim.SetBool("StopEnemy", true);
-            anim.SetTrigger("atirar");
-
-            if (timeDamage <= 0)
-            {
-                life = life - enemyAI.damage;
-                timeDamage = 1;
-            }
-
 
             if (other.gameObject.CompareTag("Soldier"))
             {
@@ -104,26 +100,6 @@ public class AI2 : MonoBehaviour
            
         }
         
-        if (other.gameObject.CompareTag("Tank"))
-        {
-            if (!actualEnemy)
-            {
-                actualEnemy = other.gameObject;
-            }
-
-            enemyAI = other.gameObject.GetComponent<AI>();
-            
-            anim.SetBool("StopEnemy", true);
-            anim.SetTrigger("atirar");
-
-            if (timeDamage <= 0)
-            {
-                life = life - enemyAI.damage;
-                timeDamage = 2;
-            }
-
-        }
-       
         
     }
        private void OnCollisionExit(Collision collision)
