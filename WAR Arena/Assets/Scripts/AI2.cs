@@ -12,13 +12,13 @@ public class AI2 : MonoBehaviourPunCallbacks
     private AI enemyAI;
     private AI2 allyAI;
     public NavMeshAgent moves;
-    private PlayerController Pcontroller;
+    public PlayerController Pcontroller;
     public float damage, life, speedFloat;
     [SerializeField]
     private float timeDamage = 2;
     private Animator anim;
     
-    private GameObject actualEnemy;
+    public GameObject actualEnemy;
 
     void Start()
     {
@@ -42,7 +42,7 @@ public class AI2 : MonoBehaviourPunCallbacks
         if (life <= 0)
         {
             Pcontroller.money += 15;
-            Destroy(gameObject);
+            PhotonNetwork.Destroy(gameObject);
         }
 
         if (speedFloat <= 0)
@@ -50,13 +50,13 @@ public class AI2 : MonoBehaviourPunCallbacks
             if (anim.GetBool("StopEnemy"))
             {
                 anim.SetBool("StopEnemy", false);
-                GetComponent<NavMeshAgent>().speed = 1.1f;
+                GetComponent<NavMeshAgent>().speed = 0.8f;
                 speedFloat = 2;
             }
         }
 
     }
-    
+
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -64,19 +64,24 @@ public class AI2 : MonoBehaviourPunCallbacks
             Destroy(gameObject, 0.1f);
 
         }
-        
+
         if (other.gameObject.CompareTag("Soldier"))
         {
+            if (!actualEnemy)
+            {
+                actualEnemy = other.gameObject;
+            }
 
-            if (other.gameObject.CompareTag("Soldier"))
+
+            if (other.gameObject.CompareTag("Soldier "))
             {
                 anim.SetBool("StopEnemy", true);
             }
 
         }
-        
+
     }
-    
+
     private void OnCollisionStay(Collision other)
     {
         if (other.gameObject.CompareTag("Soldier"))

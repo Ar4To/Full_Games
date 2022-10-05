@@ -11,7 +11,7 @@ public class AI : MonoBehaviourPunCallbacks
     public Transform enemyTransform;
     private AI2 enemyAI2;
     private AI allyAI;
-    private PlayerController Pcontroller;
+    public PlayerController Pcontroller;
     public NavMeshAgent moves;
     public float damage, life, speedFloat;
     [SerializeField]
@@ -43,7 +43,7 @@ public class AI : MonoBehaviourPunCallbacks
         if (life <= 0)
         {
             Pcontroller.money += 15;
-            Destroy(gameObject);
+            PhotonNetwork.Destroy(gameObject);
         }
 
         if (speedFloat <= 0)
@@ -118,7 +118,7 @@ public class AI : MonoBehaviourPunCallbacks
         
 
 
-
+    
    
 
     private void OnCollisionExit(Collision collision)

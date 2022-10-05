@@ -263,15 +263,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8409976845646190927}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4.38, y: -4.02, z: 5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.1, y: -3.7, z: 5.18}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 8409976845646624513}
   - {fileID: 8409976845646664007}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8409976845655658793
 Animator:
   serializedVersion: 3
@@ -326,11 +326,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTransform: {fileID: 7463844566539441812, guid: 51439ec99e737974cb106487b35b121b, type: 3}
+  Pcontroller: {fileID: 1100989759, guid: 51439ec99e737974cb106487b35b121b, type: 3}
   moves: {fileID: 3837342547440980998}
   damage: 9
   life: 27
-  timeDamage: 1
   speedFloat: 0
+  timeDamage: 1
   actualEnemy: {fileID: 0}
 --- !u!54 &3297303461373802773
 Rigidbody:
@@ -398,6 +399,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: -3633173314756404889}
+  - {fileID: -409116522107313417}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -415,8 +417,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters: []
-  m_SynchronizeLayers: []
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 0
+    Name: StopEnemy
+  - Type: 9
+    SynchronizeType: 0
+    Name: atirar
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!1 &8409976845646198355
 GameObject:
   m_ObjectHideFlags: 0

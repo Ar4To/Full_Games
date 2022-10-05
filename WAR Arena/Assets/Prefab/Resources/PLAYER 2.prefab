@@ -130,13 +130,14 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 3
+  Synchronization: 2
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
   - {fileID: 4144513324360111495}
   - {fileID: 4593208117503566124}
   - {fileID: 7463844567780789658}
+  - {fileID: 2310180650524528814}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -152,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b52c6275ccb99cc4abc0b38fbf8eb2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 120
+  money: 100
   moneyTime: 5
   buyTime: 0.8
   moneyTxt: {fileID: 7463844567379820916}
@@ -1245,6 +1246,7 @@ GameObject:
   - component: {fileID: 7463844566951104481}
   - component: {fileID: 7463844566951104493}
   - component: {fileID: 7463844567780789658}
+  - component: {fileID: 2310180650524528814}
   m_Layer: 0
   m_Name: Base2
   m_TagString: Player2
@@ -1360,8 +1362,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SynchronizeVelocity: 1
   m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 0
+  m_TeleportEnabled: 1
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &2310180650524528814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7463844566951104482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 1
+  m_UseLocal: 1
 --- !u!1 &7463844566978463951
 GameObject:
   m_ObjectHideFlags: 0

@@ -407,7 +407,7 @@ namespace Photon.Pun
                 }
             }
         }
-
+       
 
         /// <summary>
         /// Depending on the PhotonView's OwnershipTransfer setting, any client can request to become owner of the PhotonView.

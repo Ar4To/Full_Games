@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
-using System.IO;
+
 
 public class PlayerController : MonoBehaviourPunCallbacks
 {
@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
+        money = 100;
         pV = GetComponent<PhotonView>();
     
         _player1Canvas = GameObject.Find("Canvas1");
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
         
         
 
-        if (!pV.IsMine)
+        if (pV.IsMine)
         {
             team = lM.team;
             if(pV.ViewID == 1)
@@ -237,10 +238,12 @@ public class PlayerController : MonoBehaviourPunCallbacks
             if (buyTime <= 0)
             {
                 money -= 30;
-                GameObject soldier = Instantiate(soldiers[0]) as GameObject;
+                // GameObject soldier = PhotonNetwork.Instantiate(soldiers[0]), spawner.position;
+                GameObject soldier = PhotonNetwork.Instantiate(soldiers[0].name, soldiers[0].transform.position, Quaternion.identity);
                 soldier.transform.position = spawner.position;
+
                 buyTime = 1.2f;
-                photonView.RPC("Soldier", RpcTarget.All, soldier);
+                photonView.RPC("Soldier", RpcTarget.AllViaServer, soldier);
             }
         }
 
@@ -253,10 +256,12 @@ public class PlayerController : MonoBehaviourPunCallbacks
             if (buyTime <= 0)
             {
                 money -= 80;
-                GameObject bazooka = Instantiate(soldiers[1]) as GameObject;
+                //GameObject bazooka = PhotonNetwork.Instantiate(soldiers[UnityEngine.Random.Range(0, BlockingInstances.Length)], transform.position, Quaternion.identity);
+                //GameObject bazooka = Instantiate(soldiers[1]) as GameObject;
+                GameObject bazooka = PhotonNetwork.Instantiate(soldiers[1].name, soldiers[1].transform.position, Quaternion.identity);
                 bazooka.transform.position = spawner.position;
                 buyTime = 1.2f;
-                photonView.RPC("Bazooka", RpcTarget.All, bazooka);
+                photonView.RPC("Bazooka", RpcTarget.AllViaServer, bazooka);
 
             }
         }
@@ -270,10 +275,11 @@ public class PlayerController : MonoBehaviourPunCallbacks
             if (buyTime <= 0)
             {
                 money -= 160;
-                GameObject tank = Instantiate(soldiers[2]) as GameObject;
+                //GameObject tank = Instantiate(soldiers[2]) as GameObject;
+                GameObject tank = PhotonNetwork.Instantiate(soldiers[2].name, soldiers[2].transform.position, Quaternion.identity);
                 tank.transform.position = spawner.position;
                 buyTime = 1.3f;
-                photonView.RPC("Tank", RpcTarget.All, tank);
+                photonView.RPC("Tank", RpcTarget.AllViaServer, tank);
             }
         }
     }

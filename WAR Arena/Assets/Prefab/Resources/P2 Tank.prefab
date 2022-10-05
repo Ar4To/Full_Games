@@ -33,8 +33,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365442728569616542}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.83, y: -4, z: 5.38}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.1, y: -3.7, z: 5.18}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 3654199246646884576}
@@ -42,7 +42,7 @@ Transform:
   - {fileID: 6203091289993154077}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5625575782274166971
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -141,10 +141,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTransform: {fileID: 2555337308434062876, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
   moves: {fileID: 1980093080555703666}
+  Pcontroller: {fileID: 1201174362, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
   damage: 16
   life: 50
   speedFloat: 0
   timeDamage: 0
+  actualEnemy: {fileID: 0}
 --- !u!195 &1980093080555703666
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -241,7 +243,10 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: -7319026329967489202}
+  - {fileID: -1986074376866073823}
+  - {fileID: 807596204900898163}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0

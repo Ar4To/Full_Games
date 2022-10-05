@@ -5,6 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class LobbyManager : MonoBehaviourPunCallbacks
@@ -18,8 +19,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public GameObject _myPlayer2;
     public GameObject prePlayer1;
     public GameObject prePlayer2;
-    
-    public InputField _intPlayerName;
+    //public InputField _intPlayerName;
+    public TMP_InputField _intPlayerName;
     public string _strPlayerName;
     void Start()
     {
@@ -27,8 +28,10 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         //lobbyMatch.SetActive(false);
 
         //_strPlayerName = "Player" + Random.Range(100, 999);
-        _intPlayerName.text = _strPlayerName;
+
         //PhotonNetwork.ConnectUsingSettings();
+
+        _intPlayerName.text = _strPlayerName;
 
         prePlayer1.SetActive(false);
         prePlayer2.SetActive(false);
@@ -37,11 +40,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         print("Connected");
-        PhotonNetwork.AutomaticallySyncScene = true;
+        
         lobbyMatch.SetActive(false);
         findMatchBtn.SetActive(true);
         PhotonNetwork.JoinRandomRoom();
-
+        PhotonNetwork.AutomaticallySyncScene = true;
 
 
     }
@@ -110,9 +113,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     
    public override void OnPlayerEnteredRoom(Player newplayer)
     {
+        
 
-
-        if(PhotonNetwork.CurrentRoom.PlayerCount == 2 && PhotonNetwork.IsMasterClient)
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 2 && PhotonNetwork.IsMasterClient)
         {
 
             print(PhotonNetwork.CurrentRoom.PlayerCount + "/2 Starting Game");
@@ -121,15 +124,15 @@ public class LobbyManager : MonoBehaviourPunCallbacks
             team = 2;
             PhotonNetwork.LoadLevel(1);
             
-            
+            /*
                 PhotonNetwork.Instantiate(_myPlayer2.name, _myPlayer2.transform.position, _myPlayer2.transform.rotation, 0);
                 print(_myPlayer2);
                 PhotonNetwork.Instantiate(_myPlayer1.name, _myPlayer1.transform.position, _myPlayer1.transform.rotation, 0);
                 print(_myPlayer1);
-
+            */
                 prePlayer1.SetActive(true);
                 prePlayer2.SetActive(true);
-
+            
         }
         
     }
