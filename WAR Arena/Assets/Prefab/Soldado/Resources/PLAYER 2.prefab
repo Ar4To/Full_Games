@@ -111,6 +111,8 @@ Transform:
   m_LocalPosition: {x: 7.4, y: -3.7, z: 5.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 7463844567541223100}
+  - {fileID: 7463844567420681492}
   - {fileID: 7463844566951104494}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -156,6 +158,7 @@ MonoBehaviour:
   money: 100
   moneyTime: 5
   buyTime: 0.8
+  mundialOrderTime: 0
   moneyTxt: {fileID: 7463844567379820916}
   life: 100
   lifeMAX: {fileID: 7463844567824816960}
@@ -165,6 +168,7 @@ MonoBehaviour:
   - {fileID: 365442728569616542, guid: 9a0f1c33ba3c3a44c8d761e6fe91edab, type: 3}
   pV: {fileID: 93563710}
   player: {fileID: 7463844566951104482}
+  playerScript: {fileID: 0}
   spawner: {fileID: 7463844567541223100}
 --- !u!114 &4144513324360111495
 MonoBehaviour:
@@ -1264,11 +1268,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7463844567541223100}
-  - {fileID: 7463844567420681492}
+  m_Children: []
   m_Father: {fileID: 7463844566539441812}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7463844566951104495
 MeshFilter:
@@ -2049,7 +2051,7 @@ RectTransform:
   - {fileID: 7463844567672225457}
   - {fileID: 7463844566893470103}
   - {fileID: 7463844567902200948}
-  m_Father: {fileID: 7463844566951104494}
+  m_Father: {fileID: 7463844566539441812}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2280,7 +2282,7 @@ Transform:
   m_LocalPosition: {x: -1.2999997, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7463844566951104494}
+  m_Father: {fileID: 7463844566539441812}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7463844567544910843
