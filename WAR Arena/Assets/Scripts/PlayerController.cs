@@ -7,20 +7,20 @@ using Photon.Pun;
 
 public class PlayerController : MonoBehaviourPunCallbacks
 {
-    
+
     public int money = 100; //dinheiro
     [SerializeField]
-    private float moneyTime = 5, buyTime = 0.8f, mundialOrderTime; //tempo de receber dinheiro
+    private float moneyTime = 5, buyTime = 0.8f; //tempo de receber dinheiro
     public Text moneyTxt; //texto do dinheiro
     public float life = 100f; //vida
     public Image lifeMAX; //vida maxima
-    public GameObject [] soldiers; //prefab dos soldados
+    public GameObject[] soldiers; //prefab dos soldados
     public PhotonView pV;
-    private int team, mundialOrderID;
+    public int team;
     public GameObject player;
     private LobbyManager lM;
-    private GameObject _player1Canvas;
-    private GameObject _player2Canvas;
+    public GameObject _playerCanvas;
+    
     public PlayerController playerScript;
 
 
@@ -32,41 +32,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     {
         money = 100;
         pV = GetComponent<PhotonView>();
-    
-        _player1Canvas = GameObject.Find("Canvas1");
-        _player2Canvas = GameObject.Find("Canvas2");
-
-        _player1Canvas.SetActive(true);
-        _player2Canvas.SetActive(true);
-
-        team = lM.team;
-
-        if (!pV.IsMine)
-        {
-            
-            if( team ==1)
-            {
-                _player1Canvas.SetActive(true);
-                _player2Canvas.SetActive(false);
-            } else if( team == 2)
-            {
-                _player2Canvas.SetActive(true);
-                _player1Canvas.SetActive(false);
-
-            } else
-            {
-                _player2Canvas.SetActive(false);
-                _player1Canvas.SetActive(false);
-            }
-            Soldier();
-            Bazooka();
-            Tank();
-
-            DontDestroyOnLoad(this.gameObject);
-        } 
-
-
-
+        
         if (gameObject.CompareTag("Player2"))
         {
             spawner = GameObject.Find("Spawner2").transform;
@@ -79,10 +45,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        if(mundialOrderID > 0)
-        {
-            mundialOrderTime -= Time.deltaTime;
-        }
+        //team = lM.team;
 
         #region Sistema de dinheiro
         moneyTime -= Time.deltaTime;
@@ -95,7 +58,35 @@ public class PlayerController : MonoBehaviourPunCallbacks
         #endregion
 
         buyTime -= Time.deltaTime;
-        
+
+        if (pV.IsMine)
+        {
+
+            if (team == 1)
+            {
+                _playerCanvas.SetActive(true);
+                playerScript._playerCanvas.SetActive(false);
+
+            }
+        }
+        if (!pV.IsMine)
+        {
+            if (team == 2)
+            {
+            _playerCanvas.SetActive(true);
+            playerScript._playerCanvas.SetActive(false);
+
+            }
+            /*
+            else
+            {
+                _playerCanvas.SetActive(false);
+               
+            }*/
+            
+
+            DontDestroyOnLoad(this.gameObject);
+        }
 
     }
 
@@ -145,33 +136,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
         }
     }
     */
-    public void Ship()
-    {
-        if (money >= 320)
-        { 
-            if (buyTime <= 0)
-            {
-                money -= 320;
-                GameObject tank = Instantiate(soldiers[3]) as GameObject;
-                tank.transform.position = spawner.position;
-                buyTime = 0.8f;
-            }
-        }
-    }
-
-    public void Plane()
-    {
-        if (money >= 740)
-        {
-            if (buyTime <= 0)
-            {
-                money -= 740;
-                GameObject soldier = Instantiate(soldiers[4]) as GameObject;
-                soldier.transform.position = spawner.position;
-                buyTime = 0.8f;
-            }
-        }
-    }
+    
     #endregion
 
     #region colisão
@@ -291,40 +256,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
             }
         }
     }
-    /*
-    [PunRPC]
-    public void MundialOrder()
-    {
-        mundialOrderID = Random.Range(1,3);
-
-        if(mundialOrderID == 1)
-        {
-            mundialOrderTime = 3f;
-
-            if (mundialOrderTime <= 3f && mundialOrderTime != 0)
-            {
-                playerScript.money = playerScript.money;
-            } 
-        } else if (mundialOrderTime == 0)
-        {
-            mundialOrderID = 0;
-        }
-        
-        if (mundialOrderID == 2)
-        {
-            mundialOrderTime = 3f;
-
-            if (mundialOrderTime <= 3f && mundialOrderTime != 0)
-            {
-                playerScript.money = playerScript.money;
-            }
-        }
-        else if (mundialOrderTime == 0)
-        {
-            mundialOrderID = 0;
-        }
-        
-    }
-    */
+    
+    
+    
 }
 
