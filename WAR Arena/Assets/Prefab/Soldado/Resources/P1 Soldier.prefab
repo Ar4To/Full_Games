@@ -786,6 +786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTransform: {fileID: 7463844566539441812, guid: 51439ec99e737974cb106487b35b121b, type: 3}
   Pcontroller: {fileID: 1100989759, guid: 51439ec99e737974cb106487b35b121b, type: 3}
+  Player: {fileID: 0}
   moves: {fileID: 8250697765338258813}
   damage: 3
   life: 12

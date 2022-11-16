@@ -13,6 +13,7 @@ public class AI2 : MonoBehaviourPunCallbacks
     private AI2 allyAI;
     public NavMeshAgent moves;
     public PlayerController Pcontroller;
+    public GameObject Player;
     public float damage, life, speedFloat;
     [SerializeField]
     private float timeDamage = 2;
@@ -22,8 +23,11 @@ public class AI2 : MonoBehaviourPunCallbacks
 
     void Start()
     {
+
+        Player = GameObject.Find("PLAYER 1");
         moves = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+        Pcontroller = Player.GetComponent<PlayerController>();
 
     }
     // Update is called once per frame
@@ -57,6 +61,8 @@ public class AI2 : MonoBehaviourPunCallbacks
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            
+            Pcontroller.life -= damage;
             Destroy(gameObject, 0.1f);
 
         }

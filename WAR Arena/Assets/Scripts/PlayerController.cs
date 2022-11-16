@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
     [SerializeField]
     private float moneyTime = 5, buyTime = 0.8f; //tempo de receber dinheiro
     public Text moneyTxt; //texto do dinheiro
-    public float life = 100f; //vida
-    public Image lifeMAX; //vida maxima
+    public float life = 100f, lifeMax = 100f; //vida
+    public Image lifeBAR; //vida maxima
     public GameObject[] soldiers; //prefab dos soldados
     public PhotonView pV;
     public int team;
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     void Update()
     {
         //team = lM.team;
-
+        Vida();
         #region Sistema de dinheiro
         moneyTime -= Time.deltaTime;
         if (moneyTime <= 0)
@@ -91,36 +91,36 @@ public class PlayerController : MonoBehaviourPunCallbacks
     }
 
     #region Tropas
-   /* public void Soldier()
-    {
-        if (money >= 30)
-        {
-            if (buyTime <= 0)
-            {
-                money -= 30;
-                GameObject soldier = Instantiate(soldiers[0]) as GameObject;
-                soldier.transform.position = spawner.position;
-                buyTime = 1.2f;
-               
-            }
-        }
+    /* public void Soldier()
+     {
+         if (money >= 30)
+         {
+             if (buyTime <= 0)
+             {
+                 money -= 30;
+                 GameObject soldier = Instantiate(soldiers[0]) as GameObject;
+                 soldier.transform.position = spawner.position;
+                 buyTime = 1.2f;
 
-    }*/
-/*
-    public void Bazooka()
-    {
-        if (money >= 80)
-        { 
-            if (buyTime <= 0)
-            {
-                money -= 80;
-                GameObject bazooka = Instantiate(soldiers[1]) as GameObject;
-                bazooka.transform.position = spawner.position;
-                buyTime = 1.2f;
+             }
+         }
+
+     }*/
+    /*
+        public void Bazooka()
+        {
+            if (money >= 80)
+            { 
+                if (buyTime <= 0)
+                {
+                    money -= 80;
+                    GameObject bazooka = Instantiate(soldiers[1]) as GameObject;
+                    bazooka.transform.position = spawner.position;
+                    buyTime = 1.2f;
+                }
             }
         }
-    }
-*/
+    */
     /*public void Tank()
     {
         if (money >= 160)
@@ -136,73 +136,21 @@ public class PlayerController : MonoBehaviourPunCallbacks
         }
     }
     */
-    
-    #endregion
 
+    #endregion
+    private void Vida()
+    {
+        lifeBAR.fillAmount = life / lifeMax;
+    }
     #region colisão
     private void OnCollisionEnter(Collision collision)
     {
-        /*
-        if (gameObject.CompareTag("Player2"))
-        {
-            if (collision.gameObject.CompareTag("Soldier"))
-            {
-                life -= 5;
-            }
+       
 
-            if (collision.gameObject.CompareTag("Bazooka"))
-            {
-                life -= 10;
-            }
-
-            if (collision.gameObject.CompareTag("Tank"))
-            {
-                life -= 27;
-            }
-
-            if (collision.gameObject.CompareTag("Ship"))
-            {
-                life -= 38;
-            }
-
-            if (collision.gameObject.CompareTag("Plane"))
-            {
-                life -= 50;
-            }
-        }
-
-        if (gameObject.CompareTag("Player"))
-        {
-            if (collision.gameObject.CompareTag("Soldier2"))
-            {
-                life -= 5;
-            }
-
-            if (collision.gameObject.CompareTag("Bazooka2"))
-            {
-                life -= 10;
-            }
-
-            if (collision.gameObject.CompareTag("Tank2"))
-            {
-                life -= 27;
-            }
-
-            if (collision.gameObject.CompareTag("Ship2"))
-            {
-                life -= 38;
-            }
-
-            if (collision.gameObject.CompareTag("Plane2"))
-            {
-                life -= 50;
-            }
         
-        }
-        */
+        
     }
     #endregion
-
     [PunRPC]
      public void  Soldier()
     {
