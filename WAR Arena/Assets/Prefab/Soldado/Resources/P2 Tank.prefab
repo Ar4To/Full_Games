@@ -142,8 +142,9 @@ MonoBehaviour:
   enemyTransform: {fileID: 2555337308434062876, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
   moves: {fileID: 1980093080555703666}
   Pcontroller: {fileID: 1201174362, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
+  Player: {fileID: 0}
   damage: 16
-  life: 50
+  life: 25
   speedFloat: 0
   timeDamage: 0
   actualEnemy: {fileID: 0}

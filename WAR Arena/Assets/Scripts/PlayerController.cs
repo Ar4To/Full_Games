@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerController : MonoBehaviourPunCallbacks
@@ -141,6 +142,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     private void Vida()
     {
         lifeBAR.fillAmount = life / lifeMax;
+        
     }
     #region colisão
     private void OnCollisionEnter(Collision collision)
