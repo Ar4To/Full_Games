@@ -6741,6 +6741,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1100989759, guid: 51439ec99e737974cb106487b35b121b, type: 3}
+      propertyPath: money
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100989759, guid: 51439ec99e737974cb106487b35b121b, type: 3}
       propertyPath: lifeBAR
       value: 
       objectReference: {fileID: 1154624332}
