@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     public GameObject player;
     private LobbyManager lM;
     public GameObject _playerCanvas;
-    
+    public Text player1Nick, player2Nick;
     public PlayerController playerScript;
 
 
@@ -31,6 +31,10 @@ public class PlayerController : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
+        player1Nick.text = pV.Owner.NickName;
+        player2Nick.text = playerScript.pV.name;
+
+
         money = 100;
         pV = GetComponent<PhotonView>();
         
@@ -46,14 +50,14 @@ public class PlayerController : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        //team = lM.team;
+        
         Vida();
         #region Sistema de dinheiro
         moneyTime -= Time.deltaTime;
         if (moneyTime <= 0)
         {
-            money += 5;
-            moneyTime = 5;
+            money += 10;
+            moneyTime = 3;
         }
         moneyTxt.text = money.ToString();
         #endregion
@@ -78,12 +82,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             playerScript._playerCanvas.SetActive(false);
 
             }
-            /*
-            else
-            {
-                _playerCanvas.SetActive(false);
-               
-            }*/
+           
             
 
             DontDestroyOnLoad(this.gameObject);
@@ -91,68 +90,13 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
     }
 
-    #region Tropas
-    /* public void Soldier()
-     {
-         if (money >= 30)
-         {
-             if (buyTime <= 0)
-             {
-                 money -= 30;
-                 GameObject soldier = Instantiate(soldiers[0]) as GameObject;
-                 soldier.transform.position = spawner.position;
-                 buyTime = 1.2f;
-
-             }
-         }
-
-     }*/
-    /*
-        public void Bazooka()
-        {
-            if (money >= 80)
-            { 
-                if (buyTime <= 0)
-                {
-                    money -= 80;
-                    GameObject bazooka = Instantiate(soldiers[1]) as GameObject;
-                    bazooka.transform.position = spawner.position;
-                    buyTime = 1.2f;
-                }
-            }
-        }
-    */
-    /*public void Tank()
-    {
-        if (money >= 160)
-        {
-            
-            if (buyTime <= 0)
-            {
-                money -= 160;
-                GameObject tank = Instantiate(soldiers[2]) as GameObject;
-                tank.transform.position = spawner.position;
-                buyTime = 1.3f;
-            }
-        }
-    }
-    */
-
-    #endregion
+    
     private void Vida()
     {
         lifeBAR.fillAmount = life / lifeMax;
         
     }
-    #region colisão
-    private void OnCollisionEnter(Collision collision)
-    {
-       
-
-        
-        
-    }
-    #endregion
+   
     [PunRPC]
      public void  Soldier()
     {
@@ -161,7 +105,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             if (buyTime <= 0)
             {
                 money -= 30;
-                // GameObject soldier = PhotonNetwork.Instantiate(soldiers[0]), spawner.position;
+                
                 GameObject soldier = PhotonNetwork.Instantiate(soldiers[0].name, soldiers[0].transform.position, Quaternion.identity);
                 soldier.transform.position = spawner.position;
 
@@ -179,8 +123,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             if (buyTime <= 0)
             {
                 money -= 80;
-                //GameObject bazooka = PhotonNetwork.Instantiate(soldiers[UnityEngine.Random.Range(0, BlockingInstances.Length)], transform.position, Quaternion.identity);
-                //GameObject bazooka = Instantiate(soldiers[1]) as GameObject;
+                
                 GameObject bazooka = PhotonNetwork.Instantiate(soldiers[1].name, soldiers[1].transform.position, Quaternion.identity);
                 bazooka.transform.position = spawner.position;
                 buyTime = 1.2f;
@@ -198,7 +141,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             if (buyTime <= 0)
             {
                 money -= 160;
-                //GameObject tank = Instantiate(soldiers[2]) as GameObject;
+               
                 GameObject tank = PhotonNetwork.Instantiate(soldiers[2].name, soldiers[2].transform.position, Quaternion.identity);
                 tank.transform.position = spawner.position;
                 buyTime = 1.3f;

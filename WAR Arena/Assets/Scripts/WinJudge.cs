@@ -8,6 +8,7 @@ public class WinJudge : MonoBehaviour
     public PlayerController player1;
     public PlayerController player2;
     public GameObject winCanvas;
+    private LobbyManager lM;
     public Text winnerTxt;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,8 @@ public class WinJudge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         if(player1.life <= 0)
         {
             winnerTxt.text = "Player 2 Wins";

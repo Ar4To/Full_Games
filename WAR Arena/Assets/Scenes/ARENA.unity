@@ -731,6 +731,14 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -6050890151573444956, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
+      propertyPath: Synchronization
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201174362, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
+      propertyPath: buyTime
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 1201174362, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
       propertyPath: lifeBAR
       value: 
@@ -740,6 +748,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 476167778}
     - target: {fileID: 1201174362, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
+      propertyPath: playerNick
+      value: 
+      objectReference: {fileID: 1523750151}
+    - target: {fileID: 1201174362, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
+      propertyPath: player1Nick
+      value: 
+      objectReference: {fileID: 1523750151}
+    - target: {fileID: 1201174362, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
+      propertyPath: player2Nick
+      value: 
+      objectReference: {fileID: 1189337858}
+    - target: {fileID: 1201174362, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 1627546745}
@@ -747,6 +767,10 @@ PrefabInstance:
       propertyPath: _playerCanvas
       value: 
       objectReference: {fileID: 1706605315}
+    - target: {fileID: 1201174362, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
+      propertyPath: soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1016214262390580600, guid: 292e8212acadd6a4283137163b302c5e, type: 3}
     - target: {fileID: 2555337308434062876, guid: 2f3f229beb959fa41b6868f47ca7719f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4932,6 +4956,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177306023}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1189337856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1189337857}
+  - component: {fileID: 1189337859}
+  - component: {fileID: 1189337858}
+  m_Layer: 5
+  m_Name: nickPlayer2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1189337857
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189337856}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00006437301}
+  m_LocalScale: {x: 1.0000799, y: 1.0000798, z: 1.0000798}
+  m_Children: []
+  m_Father: {fileID: 2007328057}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 798.2001, y: -397.7}
+  m_SizeDelta: {x: 362.73, y: 68.01}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1189337858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189337856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.024585318, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 46
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 53
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: ....
+--- !u!222 &1189337859
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189337856}
+  m_CullTransparentMesh: 1
 --- !u!1 &1201053470
 GameObject:
   m_ObjectHideFlags: 0
@@ -5584,7 +5687,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -6230,6 +6333,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494346810}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1523750149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1523750150}
+  - component: {fileID: 1523750152}
+  - component: {fileID: 1523750151}
+  m_Layer: 5
+  m_Name: nickPlayer1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1523750150
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523750149}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.000037844}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2007328057}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -798.2, y: -397.7}
+  m_SizeDelta: {x: 362.73, y: 68.01}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1523750151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523750149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.5790384, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 46
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 53
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: ....
+--- !u!222 &1523750152
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523750149}
+  m_CullTransparentMesh: 1
 --- !u!1 &1526330398
 GameObject:
   m_ObjectHideFlags: 0
@@ -6742,7 +6924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1100989759, guid: 51439ec99e737974cb106487b35b121b, type: 3}
       propertyPath: money
-      value: 160
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1100989759, guid: 51439ec99e737974cb106487b35b121b, type: 3}
       propertyPath: lifeBAR
@@ -6753,6 +6935,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 143672416}
     - target: {fileID: 1100989759, guid: 51439ec99e737974cb106487b35b121b, type: 3}
+      propertyPath: playerNick
+      value: 
+      objectReference: {fileID: 1189337858}
+    - target: {fileID: 1100989759, guid: 51439ec99e737974cb106487b35b121b, type: 3}
+      propertyPath: player1Nick
+      value: 
+      objectReference: {fileID: 1523750151}
+    - target: {fileID: 1100989759, guid: 51439ec99e737974cb106487b35b121b, type: 3}
+      propertyPath: player2Nick
+      value: 
+      objectReference: {fileID: 1189337858}
+    - target: {fileID: 1100989759, guid: 51439ec99e737974cb106487b35b121b, type: 3}
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 201503999}
@@ -6760,6 +6954,10 @@ PrefabInstance:
       propertyPath: _playerCanvas
       value: 
       objectReference: {fileID: 2123484092}
+    - target: {fileID: 1100989759, guid: 51439ec99e737974cb106487b35b121b, type: 3}
+      propertyPath: soldiers.Array.data[1]
+      value: 
+      objectReference: {fileID: 7189819748487185150, guid: afa1e524bc547e545a6ff5a562caa788, type: 3}
     - target: {fileID: 7463844566539441812, guid: 51439ec99e737974cb106487b35b121b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -8194,8 +8392,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.1
+  m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+  m_Intensity: 2.52
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -8271,6 +8469,7 @@ GameObject:
   - component: {fileID: 2007328056}
   - component: {fileID: 2007328055}
   - component: {fileID: 2007328054}
+  - component: {fileID: 2007328058}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -8355,6 +8554,8 @@ RectTransform:
   - {fileID: 1706605316}
   - {fileID: 2123484093}
   - {fileID: 1120907841}
+  - {fileID: 1523750150}
+  - {fileID: 1189337857}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8363,6 +8564,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2007328058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007328053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36115f73eb57f744692395cdb9da01d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1Nick: {fileID: 1523750151}
+  player2Nick: {fileID: 1189337858}
 --- !u!1 &2020980295
 GameObject:
   m_ObjectHideFlags: 0

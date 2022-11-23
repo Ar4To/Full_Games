@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
 public class Menu : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class Menu : MonoBehaviour
 
     public void Play()
     {
+        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.Disconnect();
         SceneManager.LoadScene("Lobby");
     }
 
