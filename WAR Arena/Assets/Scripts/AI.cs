@@ -42,7 +42,7 @@ public class AI : MonoBehaviourPunCallbacks
 
         if (life <= 0)
         {
-            Pcontroller.money += 15;
+            //Pcontroller.money += 15;
             PhotonNetwork.Destroy(gameObject);
         }
 

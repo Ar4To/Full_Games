@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
         moneyTime -= Time.deltaTime;
         if (moneyTime <= 0)
         {
-            money += 10;
+            money += 12;
             moneyTime = 3;
         }
         moneyTxt.text = money.ToString();
@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
             }
 
 
-                DontDestroyOnLoad(this.gameObject);
+                //DontDestroyOnLoad(this.gameObject);
         }
 
     }
